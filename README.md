@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/dyvue/uangkerja.id">
-    <img src="logo-hr.png" alt="Uang Kerja" width="150">
+    <img src="logo-hr.png" alt="Uang Kerja" width="300">
   </a>
 
   <h3 align="center">Uang Kerja</h3>
