@@ -1,0 +1,110 @@
+$colorPrimary: #43c59e
+$colorPrimaryHover: #3adead
+$colorBody: #0e1f50
+$colorSecondary: #9da0a9
+$colorWhite: #ffffff
+
+body
+  font-family: 'Open Sans','sans-serif'
+  color: $colorBody
+  @apply text-sm
+
+input,
+textarea,
+button,
+select,
+a,
+div
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+.ft
+  &-h
+    font-family: 'Montserrat Alternates','Open Sans','sans-serif'
+  &-b
+    font-family: 'Open Sans','sans-serif'
+
+.btn
+  font-family: 'Montserrat Alternates','Open Sans','sans-serif'
+  color: $colorPrimary
+  border: 1px solid $colorPrimary
+  @apply px-8 py-3 font-semibold rounded-lg
+  &:hover
+    color: $colorPrimaryHover
+    border-color: $colorPrimaryHover
+  &-primary
+    color: $colorWhite
+    background-color: $colorPrimary
+    border-color: $colorPrimary
+    box-shadow: rgb(67 197 158 / 30%) 0px 2px 12px
+    &:hover
+      color: $colorWhite
+      border-color: $colorPrimaryHover
+      background-color: $colorPrimaryHover
+
+.navbar
+  font-family: 'Montserrat Alternates','Open Sans','sans-serif'
+  color: $colorBody
+  @apply relative flex items-center cursor-pointer
+  &:hover, 
+  &[active="true"]
+    color: $colorPrimary
+  &-child
+    display: none
+    background-color: $colorWhite
+    box-shadow: rgb(67 197 158 / 30%) 0px 2px 12px
+    min-width: 180px
+    width: auto
+    @apply absolute gap-4 py-3 px-1 left-0 top-0 rounded-lg z-10
+    margin-top: 35px
+  &:hover &-child
+    display: block
+  &-wrapper
+    @apply flex
+    &-sidebar
+      @apply hidden
+  &-click
+    @apply hidden
+
+@media (max-width: 1599px)
+
+@media (max-width: 1199px)
+  .navbar
+    &-child
+      margin-top: 50px
+    &-wrapper
+      @apply hidden
+      &-sidebar
+        background-color: $colorWhite
+        box-shadow: rgb(67 197 158 / 30%) 0px 2px 12px
+        left: -1199px
+        transition: left 1s
+        width: 80%
+        @apply block fixed overflow-hidden top-0 h-full z-10
+        &.show
+          left: 0
+        &-overlay
+          content: ''
+          left: -1199px
+          transition: left 1s
+          @apply fixed w-full h-full top-0
+          background-color: rgba(0, 0, 0, .3)
+          &.show
+            left: 20px
+    &-click
+      @apply block
+@media (max-width: 991px)
+  .navbar
+    &-wrapper
+      &-sidebar
+        left: -991px
+        &-overlay
+          left: -991px
+@media (max-width: 711px)
+  .navbar
+    &-wrapper
+      &-sidebar
+        left: -711px
+        &-overlay
+          left: -711px
+  .action-wrapper
+    @apply hidden

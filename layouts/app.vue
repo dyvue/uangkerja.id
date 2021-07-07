@@ -1,5 +1,17 @@
 <template>
-  <div class="fixed w-full h-full flex justify-center items-center text-center">
+  <div>
+    <Header/>
     <Nuxt/>
   </div>
 </template>
+
+<script>
+import Header from '@/components/layouts/Header.vue'
+export default {
+  components: { Header },
+}
+</script>
+
+<style>
+
+</style>

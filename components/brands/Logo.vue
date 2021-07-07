@@ -1,9 +1,15 @@
 <template>
-  <img src="@/assets/img/logo-hr.png" alt="Uang Kerja" class="w-72">
+  <img src="@/assets/img/logo-hr.png" alt="Uang Kerja" :class="ukclass">
 </template>
 
-<style>
-.nuxt-logo {
-  height: 180px;
+<script>
+export default {
+  props: {
+    'ukclass': String
+  }
 }
+</script>
+
+<style>
+
 </style>
