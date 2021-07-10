@@ -13,10 +13,10 @@
   <h3 align="center">Uang Kerja</h3>
 
   <p align="center">
-    Kelola keuanganmu untuk masa depan yang lebih baik.
+    Let money work for you.
     <br/>
     <br/>
-    <a href="javascript:void(0)"><strong>Explore the websites »</strong></a>
+    <a href="https://www.uangkerja.id"><strong>Explore the websites »</strong></a>
   </p>
 </p>
 
