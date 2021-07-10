@@ -1,5 +1,5 @@
 <template>
-  <img src="@/assets/img/logo-hr.png" alt="Uang Kerja" :class="ukclass">
+  <img src="/img/logo-hr.png" alt="Uang Kerja" :class="ukclass">
 </template>
 
 <script>
