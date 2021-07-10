@@ -8,8 +8,18 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Kelola keuanganmu untuk masa depan yang lebih baik.' },
+      { property:"og:url", content:"https://www.uangkerja.id"},
+      { property:"og:type", content:"website"},
+      { property:"og:title", content:"Uang Kerja | Kelola keuanganmu untuk masa depan yang lebih baik"},
+      { property:"og:site_name", content:"Uang Kerja"},
+      { property:"og:image", content:"/thumbnail.jpg"},
+      { property:"og:description", content:"Kelola keuanganmu untuk masa depan yang lebih baik."},
+      { property:"twitter:title", content:"Uang Kerja | Kelola keuanganmu untuk masa depan yang lebih baik"},
+      { property:"twitter:site", content:"Uang Kerja"},
+      { property:"twitter:image", content:"/thumbnail.jpg"},
+      { property:"twitter:image:src", content:"/thumbnail.jpg"},
+      { property:"twitter:card", content:"summary_large_image"},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
