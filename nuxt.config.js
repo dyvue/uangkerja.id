@@ -1,25 +1,24 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Uang Kerja',
+    title: 'Uang Kerja - Let money work for you',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'id'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Let money work for you.' },
+      { property:"og:locale", content:"id_ID"},
       { property:"og:url", content:"https://www.uangkerja.id"},
       { property:"og:type", content:"website"},
-      { property:"og:title", content:"Uang Kerja | Kelola keuanganmu untuk masa depan yang lebih baik"},
       { property:"og:site_name", content:"Uang Kerja"},
-      { property:"og:image", content:"https://www.uangkerja.id/img/logo-profile.jpg"},
-      { property:"og:description", content:"Let money work for you."},
-      { property:"twitter:title", content:"Uang Kerja | Kelola keuanganmu untuk masa depan yang lebih baik"},
-      { property:"twitter:site", content:"Uang Kerja"},
-      { property:"twitter:image", content:"https://www.uangkerja.id/img/logo-profile.jpg"},
-      { property:"twitter:image:src", content:"https://www.uangkerja.id/img/logo-profile.jpg"},
-      { property:"twitter:card", content:"summary_large_image"},
+      { property:"og:title", content:"Uang Kerja - Let money work for you"},
+      { property:"og:description", content:"Glosarium dan kecerdasan buatan untuk pemilihan metode pengelolaan keuangan dengan baik."},
+      { property:"og:image", content:"https://www.uangkerja.id/img/logo-hr.png"},
+      { property:"og:image:width", content:"786"},
+      { property:"og:image:height", content:"203"},
+      { name:"twitter:card", content:"summary_large_image"},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
