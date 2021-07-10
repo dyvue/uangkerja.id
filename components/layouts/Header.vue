@@ -1,6 +1,6 @@
 <template>
   <header class="py-4">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto">
       <div class="flex justify-between items-center">
         <div class="w-full md:w-auto flex justify-center items-center gap-2">
           <a href="javascript:void(0)" class="text-primary navbar-click p-2" @click="sidebarClick()">
@@ -13,9 +13,6 @@
           </div>
         </div>
         <div class="navbar-wrapper">
-          <nuxt-link to="/" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('index')">
-            Beranda
-          </nuxt-link>
           <a href="javascript:void(0)" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive(['pemula-reksadana', 'pemula-saham'])">
             Pemula
             <i class="ml-2 fi fi-angle-down"/>

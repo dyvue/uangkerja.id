@@ -8,13 +8,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Kelola keuanganmu untuk masa depan yang lebih baik.' },
+      { hid: 'description', name: 'description', content: 'Let money work for you.' },
       { property:"og:url", content:"https://www.uangkerja.id"},
       { property:"og:type", content:"website"},
       { property:"og:title", content:"Uang Kerja | Kelola keuanganmu untuk masa depan yang lebih baik"},
       { property:"og:site_name", content:"Uang Kerja"},
       { property:"og:image", content:"/thumbnail.jpg"},
-      { property:"og:description", content:"Kelola keuanganmu untuk masa depan yang lebih baik."},
+      { property:"og:description", content:"Let money work for you."},
       { property:"twitter:title", content:"Uang Kerja | Kelola keuanganmu untuk masa depan yang lebih baik"},
       { property:"twitter:site", content:"Uang Kerja"},
       { property:"twitter:image", content:"/thumbnail.jpg"},
@@ -58,6 +58,8 @@ export default {
   googleFonts: {
     families: {
       'Montserrat+Alternates:wght@600': true,
+      'Montserrat+Alternates:wght@700': true,
+      'Poppins': true,
       'Open+Sans': true,
     }
   }

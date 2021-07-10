@@ -3,8 +3,9 @@ module.exports = {
     colors: {
       primary: '#43c59e',
       body: '#0e1f50',
-      secondary: '#9da0a9',
+      secondary: '#75809f',
       white: '#ffffff',
+      'white-hover': '#ebe8e8',
     },
     extend: {}
   },
