@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/dyvue/uangkerja.id">
-    <img src="logo-hr.png" alt="Uang Kerja" width="300">
+    <img src="static/img/logo-hr.png" alt="Uang Kerja" width="300">
   </a>
 
   <h3 align="center">Uang Kerja</h3>
@@ -16,7 +16,7 @@
     Let money work for you.
     <br/>
     <br/>
-    <a href="javascript:void(0)"><strong>Explore the websites »</strong></a>
+    <a href="https://www.uangkerja.id"><strong>Explore the websites »</strong></a>
   </p>
 </p>
 
