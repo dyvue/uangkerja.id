@@ -19,6 +19,20 @@ a,
 div
   -webkit-tap-highlight-color: rgba(0,0,0,0)
 
+header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 10
+  transition: box-shadow .5s
+  @apply bg-white py-4
+
+header.scrolled
+  box-shadow: rgb(14 31 80 / 30%) 0px 2px 12px
+
+.site-content
+  margin-top: 80px
 
 .container
   @apply px-48

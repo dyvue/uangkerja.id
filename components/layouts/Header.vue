@@ -1,5 +1,5 @@
 <template>
-  <header class="py-4">
+  <header :class="{ 'scrolled': !view.atTopOfPage }" >
     <div class="container mx-auto">
       <div class="flex justify-between items-center">
         <div class="w-full md:w-auto flex justify-center items-center gap-2">
@@ -195,8 +195,14 @@ export default {
   components: { Logo },
   data() {
     return {
-      sidebar: false
+      sidebar: false,
+      view: {
+        atTopOfPage: true
+      }
     }
+  },
+  beforeMount () {
+    window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
     navbarActive: function (routename) {
@@ -211,6 +217,14 @@ export default {
     },
     sidebarClick: function () {
       this.sidebar = !this.sidebar
+    },
+    handleScroll(){
+      if (window.pageYOffset > 50) {
+        if (this.view.atTopOfPage) this.view.atTopOfPage = false
+      }
+      else {
+        if (!this.view.atTopOfPage) this.view.atTopOfPage = true
+      }
     }
   }
 }

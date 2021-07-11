@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="site-content">
     <section class="section-standart">
       <div class="container mx-auto">
         <div class="flex flex-col-reverse lg:flex-row gap-12">
