@@ -9,6 +9,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Let money work for you.' },
+      { name:"google-site-verification", content:"m1vN0vRt6dF6DQpnxKNikjn6U-y-DwcrO0cc6D3kk1s"},
       { property:"og:locale", content:"id_ID"},
       { property:"og:url", content:"https://www.uangkerja.id"},
       { property:"og:type", content:"website"},
