@@ -6,6 +6,14 @@
         <h2 class="ft-h-bold text-white text-5xl font-bold leading-tight">{{ $route.params.static }}</h2>
       </div>
     </section>
+    <section class="section-standart mt-24">
+      <div class="container mx-auto">
+        <div class="flex flex-col justify-center items-center text-center gap-6">
+          <p class="text-secondary">Maaf website ini sedang dalam pembangunan. Kunjungi instagram kami untuk update info terkini.</p>
+          <a href="https://instagram.com/uangkerja.id" target="_blank" class="btn btn-primary">Instagram</a>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 

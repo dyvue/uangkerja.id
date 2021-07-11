@@ -22,7 +22,7 @@
       <div class="waves-deepblue-bottom"></div>
       <div class="container mx-auto">
         <div class="flex flex-col justify-center items-center text-center gap-6 md:px-0 lg:px-32">
-          <h2 class="ft-h-bold text-white text-2xl md:text-3xl font-bold leading-tight">Produk Utama Kami</h2>
+          <h3 class="ft-h-bold text-white text-xl md:text-2xl font-bold leading-tight">Produk Utama Kami</h3>
           <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium amet, quidem modi quod itaque qui soluta laborum fugit tenetur in.</p>
         </div>
         <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

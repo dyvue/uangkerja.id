@@ -1,6 +1,7 @@
 $colorPrimary: #43c59e
 $colorPrimaryHover: #3adead
 $colorBody: #0e1f50
+$colorDarkBody: #041133
 $colorSecondary: #75809f
 $colorWhite: #ffffff
 $colorWhiteHover: #ebe8e8
@@ -94,7 +95,7 @@ div
   &-deepblue
     &-top
       position: absolute
-      top: -80px
+      top: -75px
       left: 0
       width: 100%
       height: 80px
@@ -102,11 +103,29 @@ div
       background-size: cover
     &-bottom
       position: absolute
-      bottom: -80px
+      bottom: -75px
       left: 0
       width: 100%
       height: 80px
       background-image: url(/img/waves/deepblue.svg)
+      background-size: cover
+      transform: rotateX(180deg)
+  &-deepdarkblue
+    &-top
+      position: absolute
+      top: -75px
+      left: 0
+      width: 100%
+      height: 80px
+      background-image: url(/img/waves/deepdarkblue.svg)
+      background-size: cover
+    &-bottom
+      position: absolute
+      bottom: -75px
+      left: 0
+      width: 100%
+      height: 80px
+      background-image: url(/img/waves/deepdarkblue.svg)
       background-size: cover
       transform: rotateX(180deg)
 
@@ -140,8 +159,8 @@ div
           content: ''
           left: -1199px
           transition: left 1s
-          @apply fixed w-full h-full top-0
-          background-color: rgba(0, 0, 0, .3)
+          @apply fixed w-full h-full top-0 z-10
+          background-color: rgba(67, 197, 158, .2)
           &.show
             left: 20px
     &-click
