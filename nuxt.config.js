@@ -15,7 +15,7 @@ export default {
       { property:"og:type", content:"website"},
       { property:"og:site_name", content:"Uang Kerja"},
       { property:"og:title", content:"Uang Kerja - Let money work for you"},
-      { property:"og:description", content:"Glosarium dan kecerdasan buatan untuk pemilihan metode pengelolaan keuangan dengan baik."},
+      { property:"og:description", content:"Platform edukasi keuangan untuk Zillennials."},
       { property:"og:image", content:"https://www.uangkerja.id/img/logo-hr.png"},
       { property:"og:image:width", content:"786"},
       { property:"og:image:height", content:"203"},
