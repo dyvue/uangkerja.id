@@ -43,7 +43,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -61,6 +62,15 @@ export default {
       'Montserrat+Alternates:wght@700': true,
       'Poppins': true,
       'Open+Sans': true,
+    }
+  },
+
+  googleAnalytics: {
+    id: "G-ETTVT8FB4L",
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: "G-ETTVT8FB4L"
     }
   }
 }
