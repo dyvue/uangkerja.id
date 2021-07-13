@@ -74,11 +74,11 @@
         </div>
       </div>
       <div class="mt-12 pt-6 border-t">
-        <div class="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center gap-6">
-          <p class="text-white">@ 2021 Uang Kerja Ltd.</p>
+        <div class="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center gap-2">
+          <p class="text-secondary">@ 2021 Uang Kerja Ltd.</p>
           <div class="flex gap-6">
-            <a href="/" class="text-white">Syarat</a>
-            <a href="/" class="text-white">Kebijakan Privasi</a>
+            <a href="/" class="text-white hover:text-primary">Syarat</a>
+            <a href="/" class="text-white hover:text-primary">Kebijakan Privasi</a>
           </div>
         </div>
       </div>

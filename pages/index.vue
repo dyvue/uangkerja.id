@@ -17,43 +17,34 @@
         </div>
       </div>
     </section>
-    <section class="section-deepblue bg-body">
-      <div class="waves-deepblue-top"></div>
-      <div class="waves-deepblue-bottom"></div>
+    <LandingProduct/>
+    <PlatformPerformance/>
+    <section class="section-standart bg-white-hover">
+      <!-- <div class="waves-deepwhite-top"></div>
+      <div class="waves-deepwhite-bottom"></div> -->
       <div class="container mx-auto">
-        <div class="flex flex-col justify-center items-center text-center gap-6 md:px-0 lg:px-32">
-          <h3 class="ft-h-bold text-white text-xl md:text-2xl font-bold leading-tight">Produk Utama Kami</h3>
-          <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium amet, quidem modi quod itaque qui soluta laborum fugit tenetur in.</p>
-        </div>
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <a href="javascript:void(0)" v-for="index of 6" :key="index">
-            <div class="bg-white hover:bg-white-hover p-4 rounded flex justify-start items-center gap-4">
-              <div class="bg-primary py-2 px-4 rounded-full">
-                <i class="fi fi-apple text-2xl text-white"></i>
-              </div>
-              <div class="flex flex-col gap-1">
-                <h4 class="font-semibold">Lorem ipsum dolor</h4>
-                <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </a>
+        <div class="flex flex-col justify-center items-center text-center gap-6">
+          <p class="text-secondary">Sorry this website is under construction. For more information please visit our instagram.</p>
+          <a href="https://instagram.com/uangkerja.id" target="_blank" class="btn btn-primary">Instagram</a>
         </div>
       </div>
     </section>
-    <section class="section-standart mt-24">
+    <section class="section-standart">
       <div class="container mx-auto">
-        <div class="flex flex-col justify-center items-center text-center gap-6">
-          <p class="text-secondary">Maaf website ini sedang dalam pembangunan. Kunjungi instagram kami untuk update info terkini.</p>
+        <!-- <div class="flex flex-col justify-center items-center text-center gap-6">
+          <p class="text-secondary">Sorry this website is under construction. For more information please visit our instagram.</p>
           <a href="https://instagram.com/uangkerja.id" target="_blank" class="btn btn-primary">Instagram</a>
-        </div>
+        </div> -->
       </div>
     </section>
   </div>
 </template>
 
 <script>
-
+import LandingProduct from '@/components/pages/index/LandingProduct.vue'
+import PlatformPerformance from '@/components/pages/index/PlatformPerformance.vue'
 export default {
   layout: 'app',
+  components: { LandingProduct, PlatformPerformance },
 }
 </script>

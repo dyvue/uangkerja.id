@@ -1,10 +1,11 @@
 $colorPrimary: #43c59e
-$colorPrimaryHover: #3adead
+$colorPrimaryHover: #18dca6
 $colorBody: #0e1f50
 $colorDarkBody: #041133
-$colorSecondary: #75809f
+$colorSecondary: #a3a4a7
+$colorSecondaryHover: #cfd5e4
 $colorWhite: #ffffff
-$colorWhiteHover: #ebe8e8
+$colorWhiteHover: #fafbfd
 
 body
   font-family: 'Poppins','sans-serif'
@@ -40,6 +41,8 @@ header.scrolled
 .section
   &-standart
     @apply py-36 relative
+    &-bottom
+      @apply pb-36 relative
   &-deepblue
     @apply py-36 mt-24 relative
 
@@ -142,6 +145,24 @@ header.scrolled
       background-image: url(/img/waves/deepdarkblue.svg)
       background-size: cover
       transform: rotateX(180deg)
+  &-deepwhite
+    &-top
+      position: absolute
+      top: -75px
+      left: 0
+      width: 100%
+      height: 80px
+      background-image: url(/img/waves/deepwhite.svg)
+      background-size: cover
+    &-bottom
+      position: absolute
+      bottom: -75px
+      left: 0
+      width: 100%
+      height: 80px
+      background-image: url(/img/waves/deepwhite.svg)
+      background-size: cover
+      transform: rotateX(180deg)
 
 @media (max-width: 1599px)
 
@@ -152,6 +173,8 @@ header.scrolled
   .section
     &-standart
       @apply py-12
+      &-bottom
+        @apply pb-12
     &-deepblue
       @apply py-12
 
