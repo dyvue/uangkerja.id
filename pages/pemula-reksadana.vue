@@ -9,7 +9,7 @@
     <section class="section-standart">
       <div class="container mx-auto">
         <div class="flex items-start gap-16">
-          <div class="w-full md:w-8/12 grid grid-cols-2 gap-6">
+          <div class="w-full lg:w-8/12 grid grid-cols-1 md:grid-cols-2 gap-6">
             <nuxt-link :to="'articles/'+item.slug" v-for="(item, index) of articles" :key="index">
               <div class="shadow-lg hover:shadow-xl rounded-xl h-96">
                 <img :src="item.img" :alt="item.alt" class="w-full h-48 object-cover rounded-xl">
@@ -20,7 +20,7 @@
               </div>
             </nuxt-link>
           </div>
-          <div class="w-full md:w-4/12">
+          <div class="hidden lg:block w-full lg:w-4/12">
             <a href="https://bibit.id/" target="_blank">
               <img src="https://i.ibb.co/6RPpBjy/bibit-ad-mobile.jpg" alt="Ads">
             </a>

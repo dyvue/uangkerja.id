@@ -6,7 +6,7 @@
           <div class="w-full lg:w-1/2 flex flex-col justify-center lg:justify-start items-center lg:items-start text-center lg:text-left gap-6">
             <h2 class="ft-h-bold text-4xl md:text-5xl font-bold leading-tight">Platform edukasi keuangan untuk Zillennials.</h2>
             <p class="text-secondary">Buat uang kerja untuk kita, jangan kita kerja untuk uang. Pelajari caranya gratis dan cocok untuk kaum Zillennials 👋.</p>
-            <button class="btn btn-primary">Mulai Pelajari</button>
+            <button class="btn btn-primary" @click="LinkStartLearn()">Mulai Pelajari</button>
           </div>
           <div class="w-full lg:w-1/2 flex justify-center items-center">
             <div class="relative">
@@ -46,5 +46,10 @@ import PlatformPerformance from '@/components/pages/index/PlatformPerformance.vu
 export default {
   layout: 'app',
   components: { LandingProduct, PlatformPerformance },
+  methods: {
+    LinkStartLearn: function() {
+      this.$router.push("pemula-reksadana")
+    }
+  }
 }
 </script>
