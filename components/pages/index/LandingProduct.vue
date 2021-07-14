@@ -14,8 +14,8 @@
               <i class="text-lg text-white" :class="item.icon"></i>
             </div>
             <div class="flex flex-col gap-1">
-              <h4 class="ft-h font-semibold">{{ item.title }}</h4>
-              <p class="text-xs">{{ item.description }}</p>
+              <h4 class="ft-h font-semibold text-body">{{ item.title }}</h4>
+              <p class="text-xs text-body">{{ item.description }}</p>
             </div>
           </div>
         </a>

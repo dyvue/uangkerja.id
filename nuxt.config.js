@@ -44,7 +44,8 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxt/content',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -61,6 +62,7 @@ export default {
       'Montserrat+Alternates:wght@600': true,
       'Montserrat+Alternates:wght@700': true,
       'Poppins': true,
+      'Poppins:wght@600': true,
       'Open+Sans': true,
     }
   },

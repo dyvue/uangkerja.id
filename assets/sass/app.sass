@@ -20,6 +20,13 @@ a,
 div
   -webkit-tap-highlight-color: rgba(0,0,0,0)
 
+a
+  color: $colorPrimary
+
+h1, h2, h3, h4, h5, h6
+  font-size: default
+  font-weight: default
+
 header
   position: fixed
   top: 0
@@ -51,8 +58,11 @@ header.scrolled
     font-family: 'Montserrat Alternates','Open Sans','sans-serif'
     &-bold
       font-family: 'Montserrat Alternates','Open Sans','sans-serif'
+    &-article
+      font-family: 'Poppins','Open Sans','sans-serif'
+      font-weight: 600
   &-b
-    font-family: 'Open Sans','sans-serif'
+    font-family: 'Poppins','Open Sans','sans-serif'
 
 .btn
   font-family: 'Montserrat Alternates','Open Sans','sans-serif'
@@ -163,6 +173,11 @@ header.scrolled
       background-image: url(/img/waves/deepwhite.svg)
       background-size: cover
       transform: rotateX(180deg)
+
+.article
+  &-thumbnail
+    width: 100%
+    @apply rounded-xl
 
 @media (max-width: 1599px)
 

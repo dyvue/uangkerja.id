@@ -207,11 +207,11 @@ export default {
   methods: {
     navbarActive: function (routename) {
       if (routename.constructor === Array) {
-        if (routename.includes(this.$route.name) || routename.includes(this.$route.params.static)) {
+        if (routename.includes(this.$route.name) || routename.includes(this.$route.params.slug)) {
           return true
         }
       }
-      else if (this.$route.name === routename || this.$route.params.static === routename) {
+      else if (this.$route.name === routename || this.$route.params.slug === routename) {
         return true
       }
     },
