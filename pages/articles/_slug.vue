@@ -7,7 +7,7 @@
           <span>></span>
           <nuxt-link to="/articles">Artikel</nuxt-link>
           <span>></span>
-          <span class="text-secondary">{{ article.title }}</span>
+          <span class="text-secondary truncate">{{ article.title }}</span>
         </div>
         <div class="mt-12 flex gap-16">
           <article id="article" class="article w-full lg:w-8/12 grid gap-6">

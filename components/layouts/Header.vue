@@ -12,7 +12,7 @@
             </a>
           </div>
         </div>
-        <div class="navbar-wrapper">
+        <div class="navbar-wrapper" :class="{'show': sidebar}">
           <nuxt-link to="/about-us" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('about-us')">
             Tentang Kami
           </nuxt-link>
@@ -50,103 +50,30 @@
               </a>
             </div>
             <div class="mt-6">
-              <ul>
-                <li @click="sidebarClick()">
-                  <nuxt-link to="/" class="py-6 px-2 lg:px-4 navbar" :active="navbarActive('index')">
-                    Beranda
+              <nuxt-link to="/about-us" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive('about-us')">
+                Tentang Kami
+              </nuxt-link>
+              <nuxt-link to="/articles" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive('articles')">
+                Artikel
+              </nuxt-link>
+              <a href="javascript:void(0)" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive(['catatan-keuangan', 'live-chat'])">
+                Fitur Unggulan
+                <i class="ml-2 fi fi-angle-down"/>
+                <div class="navbar-child">
+                  <nuxt-link to="/financial-recodrs" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
+                    Catatan Keuangan
                   </nuxt-link>
-                </li>
-                <li>
-                  <a href="javascript:void(0)" class="py-6 px-2 lg:px-4 navbar" :active="navbarActive(['pemula-reksadana', 'pemula-saham'])">
-                    Pemula
-                    <i class="ml-2 fi fi-angle-down"/>
-                    <div class="navbar-child">
-                      <ul>
-                        <li @click="sidebarClick()">
-                          <nuxt-link to="/pemula-reksadana" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('pemula-reksadana')">
-                            Reksadana
-                          </nuxt-link>
-                        </li>
-                        <li @click="sidebarClick()">
-                          <nuxt-link to="/pemula-saham" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('pemula-saham')">
-                            Saham
-                          </nuxt-link>
-                        </li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)" class="py-6 px-2 lg:px-4 navbar" :active="navbarActive(['investor-reksadana', 'investor-saham', 'investor-cryptocurrency', 'investor-emas'])">
-                    Untuk Investor
-                    <i class="ml-2 fi fi-angle-down"/>
-                    <div class="navbar-child">
-                      <ul>
-                        <li @click="sidebarClick()">
-                          <nuxt-link to="/investor-reksadana" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('investor-reksadana')">
-                            Reksadana
-                          </nuxt-link>
-                        </li>
-                        <li @click="sidebarClick()">
-                          <nuxt-link to="/investor-saham" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('investor-saham')">
-                            Saham
-                          </nuxt-link>
-                        </li>
-                        <li @click="sidebarClick()">
-                          <nuxt-link to="/investor-cryptocurrency" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('investor-cryptocurrency')">
-                            Cryptocurrency
-                          </nuxt-link>
-                        </li>
-                        <li @click="sidebarClick()">
-                          <nuxt-link to="/investor-emas" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('investor-emas')">
-                            Emas
-                          </nuxt-link>
-                        </li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)" class="py-6 px-2 lg:px-4 navbar" :active="navbarActive(['trader-saham', 'trader-cryptocurrency'])">
-                    Untuk Trader
-                    <i class="ml-2 fi fi-angle-down"/>
-                    <div class="navbar-child">
-                      <ul>
-                        <li @click="sidebarClick()">
-                          <nuxt-link to="/trader-saham" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('trader-saham')">
-                            Saham
-                          </nuxt-link>
-                        </li>
-                        <li @click="sidebarClick()">
-                          <nuxt-link to="/trader-cryptocurrency" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('trader-cryptocurrency')">
-                            Cryptocurrency
-                          </nuxt-link>
-                        </li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)" class="py-6 px-2 lg:px-4 navbar" :active="navbarActive(['catatan-keuangan', 'live-chat'])">
-                    Fitur Unggulan
-                    <i class="ml-2 fi fi-angle-down"/>
-                    <div class="navbar-child">
-                      <ul>
-                        <li @click="sidebarClick()">
-                          <nuxt-link to="/catatan-keuangan" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
-                            Catatan Keuangan
-                          </nuxt-link>
-                        </li>
-                        <li @click="sidebarClick()">
-                          <nuxt-link to="/live-chat" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('live-chat')">
-                            Live Chat
-                          </nuxt-link>
-                        </li>
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+                  <nuxt-link to="/robo-advisor" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
+                    Robo Advisor
+                  </nuxt-link>
+                  <nuxt-link to="/live-chat" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('live-chat')">
+                    Diskusi Online
+                  </nuxt-link>
+                </div>
+              </a>
+              <a href="/" class="py-4 px-2 lg:px-4 navbar">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1200px-Google_Play_Store_badge_EN.svg.png" alt="Google Play Store" class="w-24">
+              </a>
             </div>
           </div>
         </div>

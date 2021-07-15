@@ -15,7 +15,7 @@ author: Romadhan Edy Prasetyo
 <div class="pb-8 text-justify grid gap-4">
   <h6 class="ft-h text-primary font-bold">Halo Semua,</h6>
   <p>Indeks Harga Saham Gabungan (IHSG) berhasil naik 0,25% dari harga 6.024 pada 5 Juli ke harga 6.039 pada 9 Juli. Ditengah sentimen negatif dari PPKM Darurat dan penyebaran COVID-19. Di sisi lain, ada beberapa berita penting selama pekan lalu:</p>
-  <ul>
+  <ul class="ml-8">
     <li>
       <p><b>Hasil Risalah The Fed pada Kamis (8/7)</b> memungkinkan bank sentral AS lebih cepat mengurangi pembelian surat berharga kredit perumahan (tapering off). Hal ini menunjukkan sektor perumahan AS mulai membaik.</p>
     </li>
@@ -33,7 +33,7 @@ author: Romadhan Edy Prasetyo
 <hr>
 <div class="py-8 text-justify grid gap-4">
   <h6 class="ft-h text-primary font-bold">Kabar Indonesia</h6>
-  <ul>
+  <ul class="ml-8">
     <li>
       <p><b>Pemerintah desain ulang Anggaran PEN 2021 karena PPKM Darurat.</b> Anggaran perlindungan sosial naik menjadi Rp 153,86 triliun dari Rp 146,27 triliun. Anggaran kesehatan naik menjadi Rp 193,93 triliun dari Rp 172,84 triliun. Tujuannya  merespon dampak pandemi dari sisi kesehatan dan perlindungan sosial.</p>
     </li>
