@@ -1,6 +1,6 @@
 <template>
   <div class="site-content">
-    <!-- <section class="section-standart bg-body">
+    <section class="section-standart bg-body">
       <div class="waves-deepblue-bottom"></div>
       <div class="container mx-auto px-4 text-center">
         <h2 class="ft-h-bold text-white text-3xl lg:text-5xl font-bold leading-tight">{{ $route.params.static }}</h2>
@@ -13,7 +13,7 @@
           <a href="https://instagram.com/uangkerja.id" target="_blank" class="btn btn-primary">Instagram</a>
         </div>
       </div>
-    </section> -->
+    </section>
   </div>
 </template>
 
@@ -21,15 +21,12 @@
 
 export default {
   layout: 'app',
-  // async asyncData({ params, error, redirect, store }) {
-  //   const id = params.static;
-  //   // const stores = await store.dispatch("api/transaction/show", id);
-  //   // if (stores.responses.transaction.data) {
-  //   return true;
-  //   // } else error({ statusCode: 404, message: "Post not found" });
-  // },
-  created() {
-    this.$router.push("pemula-reksadana")
-  }
+  async asyncData({ params, error, redirect, store }) {
+    const id = params.static;
+    // const stores = await store.dispatch("api/transaction/show", id);
+    // if (stores.responses.transaction.data) {
+    return true;
+    // } else error({ statusCode: 404, message: "Post not found" });
+  },
 }
 </script>

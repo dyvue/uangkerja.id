@@ -179,11 +179,19 @@ header.scrolled
     width: 100%
     @apply rounded-xl
 
+.form
+  &-input
+    @apply py-2 px-4 border border-primary-hover rounded-xl w-full
+    &:focus
+      outline: none
+    &-article-recommend
+      @apply mt-3 bg-white border border-primary-hover rounded-xl overflow-hidden
+
 @media (max-width: 1599px)
 
 @media (max-width: 1299px)
   .container
-    @apply px-16
+    @apply px-6
 @media (max-width: 1199px)
   .section
     &-standart
@@ -236,6 +244,9 @@ header.scrolled
         left: -991px
         &-overlay
           left: -991px
+@media (max-width: 959px)
+  .action-wrapper
+    @apply hidden
 @media (max-width: 711px)
   .container
     @apply px-8

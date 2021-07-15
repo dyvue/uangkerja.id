@@ -48,7 +48,7 @@ export default {
   components: { LandingProduct, PlatformPerformance },
   methods: {
     LinkStartLearn: function() {
-      this.$router.push("pemula-reksadana")
+      this.$router.push("articles")
     }
   }
 }
