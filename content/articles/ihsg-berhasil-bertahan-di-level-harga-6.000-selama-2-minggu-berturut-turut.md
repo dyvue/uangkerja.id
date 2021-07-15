@@ -12,10 +12,10 @@ tags:
 author: Romadhan Edy Prasetyo
 ---
 
-<div class="pb-8 text-justify grid gap-4 border-b border-secondary-hover">
+<div class="pb-8 text-justify grid gap-4">
   <h6 class="ft-h text-primary font-bold">Halo Semua,</h6>
   <p>Indeks Harga Saham Gabungan (IHSG) berhasil naik 0,25% dari harga 6.024 pada 5 Juli ke harga 6.039 pada 9 Juli. Ditengah sentimen negatif dari PPKM Darurat dan penyebaran COVID-19. Di sisi lain, ada beberapa berita penting selama pekan lalu:</p>
-  <ul class="pl-8">
+  <ul>
     <li>
       <p><b>Hasil Risalah The Fed pada Kamis (8/7)</b> memungkinkan bank sentral AS lebih cepat mengurangi pembelian surat berharga kredit perumahan (tapering off). Hal ini menunjukkan sektor perumahan AS mulai membaik.</p>
     </li>
@@ -30,9 +30,10 @@ author: Romadhan Edy Prasetyo
   <p>IHSG berhasil mempertahankan di level harga 6.000 selama 2 minggu berturut-turut. Walaupun ada sentimen negatif PPKM Darurat dari 3-20 Juli 2021.</p>
 </div>
 
-<div class="py-8 text-justify grid gap-4 border-b border-secondary-hover">
+<hr>
+<div class="py-8 text-justify grid gap-4">
   <h6 class="ft-h text-primary font-bold">Kabar Indonesia</h6>
-  <ul class="pl-8">
+  <ul>
     <li>
       <p><b>Pemerintah desain ulang Anggaran PEN 2021 karena PPKM Darurat.</b> Anggaran perlindungan sosial naik menjadi Rp 153,86 triliun dari Rp 146,27 triliun. Anggaran kesehatan naik menjadi Rp 193,93 triliun dari Rp 172,84 triliun. Tujuannya  merespon dampak pandemi dari sisi kesehatan dan perlindungan sosial.</p>
     </li>
@@ -50,6 +51,7 @@ author: Romadhan Edy Prasetyo
   <p>Selama negara tersebut masih ada, dikelola dengan baik, dan potensi pertumbuhan jelas yang turun masih bisa naik kembali seperti crash di tahun 2008. Saat ini, Pemerintah dan Bank Indonesia bekerja sama untuk mendorong Pemulihan Ekonomi Nasional.</p>
 </div>
 
+<hr>
 <div class="py-8 text-justify grid gap-4">
   <h6 class="ft-h text-primary font-bold">Tips Investasi</h6>
   <p><b>Kamu akan merasa aman, bila mempunyai dana darurat</b> karena bisa membiayai kebutuhan saat mendesak. Jadi tidak perlu menggunakan dana kebutuhan sehari-hari atau investasi.</p>

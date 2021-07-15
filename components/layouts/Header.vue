@@ -1,5 +1,5 @@
 <template>
-  <header :class="{ 'scrolled': !view.atTopOfPage }" >
+  <header :class="{ 'scrolled': !view.top_of_page }" >
     <div class="container mx-auto">
       <div class="flex justify-between items-center">
         <div class="w-full md:w-auto flex justify-center items-center gap-2">
@@ -155,6 +155,7 @@
         </div>
       </div>
     </div>
+    <div class="bg-primary-hover h-1 absolute bottom-0 left-0" :style="{'width': view.scroll_indicator+'%'}" v-if="this.$route.name === 'articles-slug'"></div>
   </header>
 </template>
 
@@ -166,7 +167,8 @@ export default {
     return {
       sidebar: false,
       view: {
-        atTopOfPage: true
+        top_of_page: true,
+        scroll_indicator: 0,
       }
     }
   },
@@ -189,11 +191,21 @@ export default {
     },
     handleScroll: function (){
       if (window.pageYOffset > 50) {
-        if (this.view.atTopOfPage) this.view.atTopOfPage = false
+        if (this.view.top_of_page) this.view.top_of_page = false
       }
       else {
-        if (!this.view.atTopOfPage) this.view.atTopOfPage = true
+        if (!this.view.top_of_page) this.view.top_of_page = true
       }
+
+      if (this.$route.name === 'articles-slug') {
+        this.handleScrollIndicator()
+      }
+    },
+    handleScrollIndicator() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      this.view.scroll_indicator = scrolled
     },
     donate: function() {
       alert("We haven't prepared the donation address yet, but thank you for your kindness :)")

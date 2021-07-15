@@ -56,6 +56,11 @@ export default {
   build: {
   },
 
+  // Generate 404 error page
+  generate: {
+    fallback: '404.html'
+  },
+
   // Additional modules cfg
   googleFonts: {
     families: {

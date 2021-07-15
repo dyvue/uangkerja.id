@@ -10,7 +10,7 @@
           <span class="text-secondary">{{ article.title }}</span>
         </div>
         <div class="mt-12 flex gap-16">
-          <article class="article w-full lg:w-8/12 grid gap-6">
+          <article id="article" class="article w-full lg:w-8/12 grid gap-6">
             <h2 class="ft-h-article">{{ article.title }}</h2>
             <p class="text-secondary">
               {{ article.date }}
