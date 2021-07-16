@@ -27,8 +27,9 @@ h1, h2, h3, h4, h5, h6
   font-size: default
   font-weight: default
 
-ul
+ol, ul
   list-style: initial
+  @apply ml-8
 
 hr
   color: $colorSecondaryHover
@@ -192,6 +193,10 @@ header.scrolled
       outline: none
     &-article-recommend
       @apply mt-3 bg-white border border-primary-hover rounded-xl overflow-hidden
+
+.text
+  &-justify
+    text-align: justify
 
 @media (max-width: 1599px)
 

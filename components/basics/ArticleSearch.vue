@@ -8,17 +8,14 @@
       class="form-input"
       @input="handleInput"
     />
-    <ul v-if="articles.length" class="form-input-article-recommend">
-      <li v-for="(item, index) of articles" :key="index" class="flex items-center gap-2 p-2 hover:bg-white-hover">
+    <div v-if="articles.length" class="form-input-article-recommend">
+      <nuxt-link :to="{ name: 'articles-slug', params: { slug: item.slug } }" v-for="(item, index) of articles" :key="index" class="flex items-center gap-2 p-2 hover:bg-white-hover">
         <img :src="item.img" :alt="item.title" class="w-12 rounded">
-        <nuxt-link
-          :to="{ name: 'articles-slug', params: { slug: item.slug } }"
-          class="text-body"
-        >
+        <span class="text-body">
           {{ item.title }}
-        </nuxt-link>
-      </li>
-    </ul>
+        </span>
+      </nuxt-link>
+    </div>
   </div>
 </template>
 <script>
