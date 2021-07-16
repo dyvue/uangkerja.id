@@ -50,25 +50,35 @@
               </a>
             </div>
             <div class="mt-6">
-              <nuxt-link to="/about-us" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive('about-us')">
-                Tentang Kami
-              </nuxt-link>
-              <nuxt-link to="/articles" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive('articles')">
-                Artikel
-              </nuxt-link>
+              <div @click="sidebarClick()">
+                <nuxt-link to="/about-us" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive('about-us')" @click="sidebarClick()">
+                  Tentang Kamiz
+                </nuxt-link>
+              </div>
+              <div @click="sidebarClick()">
+                <nuxt-link to="/articles" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive('articles')" @click="sidebarClick()">
+                  Artikel
+                </nuxt-link>
+              </div>
               <a href="javascript:void(0)" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive(['catatan-keuangan', 'live-chat'])">
                 Fitur Unggulan
                 <i class="ml-2 fi fi-angle-down"/>
                 <div class="navbar-child">
-                  <nuxt-link to="/financial-recodrs" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
-                    Catatan Keuangan
-                  </nuxt-link>
-                  <nuxt-link to="/robo-advisor" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
-                    Robo Advisor
-                  </nuxt-link>
-                  <nuxt-link to="/live-chat" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('live-chat')">
-                    Diskusi Online
-                  </nuxt-link>
+                  <div @click="sidebarClick()">
+                    <nuxt-link to="/financial-recodrs" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
+                      Catatan Keuangan
+                    </nuxt-link>
+                  </div>
+                  <div @click="sidebarClick()">
+                    <nuxt-link to="/robo-advisor" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
+                      Robo Advisor
+                    </nuxt-link>
+                  </div>
+                  <div @click="sidebarClick()">
+                    <nuxt-link to="/live-chat" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('live-chat')">
+                      Diskusi Online
+                    </nuxt-link>
+                  </div>
                 </div>
               </a>
               <a href="/" class="py-4 px-2 lg:px-4 navbar">
@@ -82,7 +92,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-primary-hover h-1 absolute bottom-0 left-0" :style="{'width': view.scroll_indicator+'%'}" v-if="this.$route.name === 'articles-slug'"></div>
+    <div class="bg-primary-hover h-1 absolute bottom-0 left-0" :style="{'width': view.scroll_indicator+'%'}" v-if="this.$route.name === 'articles-slug-slug'"></div>
   </header>
 </template>
 
@@ -124,7 +134,7 @@ export default {
         if (!this.view.top_of_page) this.view.top_of_page = true
       }
 
-      if (this.$route.name === 'articles-slug') {
+      if (this.$route.name === 'articles-slug-slug') {
         this.handleScrollIndicator()
       }
     },

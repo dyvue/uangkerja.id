@@ -9,7 +9,7 @@
       @input="handleInput"
     />
     <div v-if="articles.length" class="form-input-article-recommend">
-      <nuxt-link :to="{ name: 'articles-slug', params: { slug: item.slug } }" v-for="(item, index) of articles" :key="index" class="flex items-center gap-2 p-2 hover:bg-white-hover">
+      <nuxt-link :to="{ name: 'articles-slug-slug', params: { slug: item.slug } }" v-for="(item, index) of articles" :key="index" class="flex items-center gap-2 p-2 hover:bg-white-hover">
         <img :src="item.img" :alt="item.title" class="w-12 rounded">
         <span class="text-body">
           {{ item.title }}

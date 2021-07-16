@@ -16,7 +16,7 @@
               </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <nuxt-link :to="'articles/'+item.slug" v-for="(item, index) of articles" :key="index">
+              <nuxt-link :to="'articles/slug/'+item.slug" v-for="(item, index) of paginated_articles" :key="index">
                 <div class="shadow-lg hover:shadow-xl rounded-xl h-96">
                   <img :src="item.img" :alt="item.alt" class="w-full h-48 object-cover rounded-xl">
                   <div class="p-6 flex flex-col gap-4">
@@ -28,6 +28,9 @@
                   </div>
                 </div>
               </nuxt-link>
+            </div>
+            <div class="mt-8 flex justify-end items-center">
+              <Pagination :total="articles.length" :perPage="6" v-on:paginationEvent="paginationEvent()"/>
             </div>
           </div>
           <div class="w-full lg:w-4/12">
@@ -47,26 +50,26 @@
 </template>
 
 <script>
+import getContent from "@/utils/getContent"
 import ArticleSearch from '@/components/basics/ArticleSearch'
+import Pagination from '@/components/basics/Pagination'
 export default {
   layout: 'app',
-  async asyncData({ $content }) {
-    const articles = await $content('articles')
-      .only(['title', 'date', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
-      .sortBy('date', 'desc')
-      .fetch()
+  async asyncData({ $content, query, error }) {
+    const content = await getContent($content, query, error);
     return {
-      articles
-    }
+      articles: content.allArticles,
+      paginated_articles: content.paginatedArticles,
+    };
   },
-  components: { ArticleSearch },
+  components: { ArticleSearch, Pagination },
   data() {
     return {
       search: {
         query: '',
         query_result: '',
         submit: false
-      }
+      },
     }
   },
   methods: {
@@ -80,6 +83,11 @@ export default {
       .fetch()
       this.articles = articles
     },
+    paginationEvent: async function () {
+      const content = await getContent(this.$content, this.$route.query, this.$nuxt.error);
+      this.articles = content.allArticles
+      this.paginated_articles = content.paginatedArticles
+    } 
   }
 }
 </script>
