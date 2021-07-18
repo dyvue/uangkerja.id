@@ -2,10 +2,9 @@
   "name": "discuss.uangkerja.id",
   "version": "1.0.0",
   "description": "Online discussion by uangkerja.id",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server"
+    "start": "node index"
   },
   "author": "dyvue",
   "license": "GNU General Public License",
