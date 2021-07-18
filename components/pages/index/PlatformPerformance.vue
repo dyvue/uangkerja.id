@@ -1,11 +1,11 @@
 <template>
   <!-- <section class="section-standart-bottom"> -->
-  <section class="section-standart mt-24">
+  <section class="relative pb-12 md:pb-16 lg:pb-24">
     <div class="container mx-auto">
       <div class="flex flex-col justify-center items-center text-center gap-6 md:px-0 lg:px-32">
         <h3 class="ft-h-bold text-xl font-bold leading-tight text-secondary-hover">Kinerja Platform</h3>
       </div>
-      <div class="mt-16 grid grid-cols-1 grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="mt-12 grid grid-cols-1 grid-cols-1 md:grid-cols-3 gap-6">
         <div v-for="(item, index) of products" :key="index">
           <div class="bg-white p-4 rounded flex justify-center items-start lg:items-center text-center gap-4">
             <div class="flex flex-col justify-center items-center text-center gap-4">

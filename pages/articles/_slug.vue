@@ -36,11 +36,28 @@
 
 export default {
   layout: 'app',
-  async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch()
-    if (article) {
+  head() {
+    return {
+      title: this.article.title + ' - Uang Kerja',
+      meta: [
+        { property:"og:url", content:"https://www.uangkerja.id/" + this.article.slug},
+        { property:"og:title", content:this.article.title + ' - Uang Kerja'},
+        { property:"og:description", content:this.article.description},
+        { property:"og:image", content:this.article.img},
+        { property:"og:image:width", content:"786"},
+        { property:"og:image:height", content:"203"},
+        { name:"twitter:card", content:"summary_large_image"},
+      ],
+    }
+  },
+  async asyncData({ $content, params, error }) {
+    try {
+      const article = await $content('articles', params.slug).fetch()
       return { article }
-    } else error({ statusCode: 404, message: "Post not found" });
-  }
+    }
+    catch (err) {
+      error({ statusCode: 404, message: "Post not found" })
+    }
+  },
 }
 </script>

@@ -17,35 +17,19 @@
         </div>
       </div>
     </section>
+    <ArticlesInfo/>
     <LandingProduct/>
     <PlatformPerformance/>
-    <section class="section-standart bg-white-hover">
-      <!-- <div class="waves-deepwhite-top"></div>
-      <div class="waves-deepwhite-bottom"></div> -->
-      <div class="container mx-auto">
-        <div class="flex flex-col justify-center items-center text-center gap-6">
-          <p class="text-secondary">Sorry this website is under construction. For more information please visit our instagram.</p>
-          <a href="https://instagram.com/uangkerja.id" target="_blank" class="btn btn-primary">Instagram</a>
-        </div>
-      </div>
-    </section>
-    <section class="section-standart">
-      <div class="container mx-auto">
-        <!-- <div class="flex flex-col justify-center items-center text-center gap-6">
-          <p class="text-secondary">Sorry this website is under construction. For more information please visit our instagram.</p>
-          <a href="https://instagram.com/uangkerja.id" target="_blank" class="btn btn-primary">Instagram</a>
-        </div> -->
-      </div>
-    </section>
   </div>
 </template>
 
 <script>
+import ArticlesInfo from '@/components/pages/index/ArticlesInfo.vue'
 import LandingProduct from '@/components/pages/index/LandingProduct.vue'
 import PlatformPerformance from '@/components/pages/index/PlatformPerformance.vue'
 export default {
   layout: 'app',
-  components: { LandingProduct, PlatformPerformance },
+  components: { ArticlesInfo, LandingProduct, PlatformPerformance },
   methods: {
     LinkStartLearn: function() {
       this.$router.push("articles")

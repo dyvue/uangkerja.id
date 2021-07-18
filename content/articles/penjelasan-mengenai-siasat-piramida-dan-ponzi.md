@@ -1,8 +1,7 @@
 ---
-hero: Pemula Reksadana
 title: Penjelasan Mengenai Siasat Piramida dan Ponzi
 date: July 02, 2021
-description: 
+description: Siasat Ponzi dinamakan dari nama Charles Ponzi, seorang penipu italia yang berpindah ke Amerika Utara dan menjadi sangat terkenal dikarenakan oleh sistem kecurangan yang ia gunakan untuk mendapatkan kekayaannya.
 img: https://i.ibb.co/jbQCnNj/Penjelasan-Mengenai-Siasat-Piramida-dan-Ponzi.jpg
 alt: Penjelasan Mengenai Siasat Piramida dan Ponzi
 tags: 
@@ -24,7 +23,7 @@ author: Romadhan Edy Prasetyo
   <h6 class="ft-h text-primary font-bold">Apakah siasat Ponzi?</h6>
   <p>Siasat Ponzi dinamakan dari nama Charles Ponzi, seorang penipu italia yang berpindah ke Amerika Utara dan menjadi sangat terkenal dikarenakan oleh sistem kecurangan yang ia gunakan untuk mendapatkan kekayaannya. Di tahun 1920-an, Ponzi berhasil menipu ratusan korban dan siasat yang ia lakukan berlangsung untuk lebih dari setahun. Pada dasarnya, siasat Ponzi adalah sebuah penipuan investasi yang bekerja dengan membayar investor yang lebih berumur dengan uang yang didapat dari investor baru. Sebuah masalah yang timbul dari siasat ini adalah investor yang paling belakang tidak akan dibayarkan sama sekali.</p>
   <p>Penoperasian siasat Ponzi akan terlihat kurang-lebihnya seperti ini:</p>
-  <ul>
+  <ul class="grid gap-2">
     <li>
       <p>Seorang penyelenggara kesempatan investasi mengambil $1.000 dari investor. Ia lalu berjanji untuk mengembalikan nilai awal bersama dengan bunga 10% setelah jumlah hari selesai (contohnya 90 hari).</p>
     </li>
@@ -61,7 +60,7 @@ author: Romadhan Edy Prasetyo
 <div class="text-justify grid gap-4">
   <h6 class="ft-h text-primary font-bold">Ponzi vs Piramida</h6>
   <p><b>Persamaan</b></p>
-  <ul>
+  <ul class="grid gap-2">
     <li>
       <p>Keduanya adalah bentuk penipuan finansial yang meyakinkan korban untuk menginvestasikan uangnya dengan menjanjikan laba.</p>
     </li>
@@ -73,7 +72,7 @@ author: Romadhan Edy Prasetyo
     </li>
   </ul>
   <p><b>Perbedaan</b></p>
-  <ul>
+  <ul class="grid gap-2">
     <li>
       <p>Siasat Ponzi biasanya disuguhkan sebagai sebuah layanan manajemen investasi, dimana peserta percaya bahwa laba yang didapatkan adalah berasal dari investasi yang sah. Penipu pada dasarnya merampok satu untuk membayar yang lainnya.</p>
     </li>
@@ -89,7 +88,7 @@ author: Romadhan Edy Prasetyo
 
 <div class="text-justify grid gap-4">
   <h6 class="ft-h text-primary font-bold">Bagaimana cara melindungi diri anda?</h6>
-  <ul>
+  <ul class="grid gap-2">
     <li>
       <p>Berlakulah skeptis. Sebuah kesempatan investasi yang menjanjikan laba yang cepat dan banyak, dengan investasi yang sedikit biasanya adalah penipu. Ini lebih tepatnya pada saat berinvestasi dengan sesuatu yang benar-benar aneh atau sulit untuk dimengerti. Jika ini terdengar seperti terlalu baik untuk menjadi kenyataan, mungkin pepatah itu benar.</p>
     </li>

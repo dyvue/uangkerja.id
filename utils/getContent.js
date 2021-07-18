@@ -1,12 +1,21 @@
 export default async ($content, params, error) => {
   const currentPage = parseInt(params.page);
-
   const perPage = 6;
+  let allArticles = []
 
-  const allArticles = await $content('articles')
-  .only(['title', 'date', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
-  .sortBy('date', 'desc')
-  .fetch();
+  if (params.search) {
+    allArticles = await $content('articles')
+    .search(params.search)
+    .only(['title', 'date', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
+    .sortBy('date', 'desc')
+    .fetch();
+  }
+  else {
+    allArticles = await $content('articles')
+    .only(['title', 'date', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
+    .sortBy('date', 'desc')
+    .fetch();
+  }
 
   const totalArticles = allArticles.length;
 
@@ -20,18 +29,30 @@ export default async ($content, params, error) => {
     if (currentPage === 1) {
       return 0;
     }
-    if (currentPage === lastPage) {
-      return totalArticles - perPage;
-    }
+    // if (currentPage === lastPage) {
+    //   return totalArticles - perPage;
+    // }
     return (currentPage - 1) * perPage;
   };
 
-  const paginatedArticles = await $content("articles")
+  let paginatedArticles = []
+  if (params.search) {
+    paginatedArticles = await $content("articles")
+    .search(params.search)
     .only(['title', 'date', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
     .sortBy('date', 'desc')
-    .limit(perPage)
     .skip(skipNumber())
+    .limit(perPage)
     .fetch();
+  }
+  else {
+    paginatedArticles = await $content("articles")
+    .only(['title', 'date', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
+    .sortBy('date', 'desc')
+    .skip(skipNumber())
+    .limit(perPage)
+    .fetch();
+  }
 
   if (currentPage === 0 || !paginatedArticles.length) {
     return error({ statusCode: 404, message: "No articles found!" });

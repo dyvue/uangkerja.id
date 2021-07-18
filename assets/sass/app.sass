@@ -7,6 +7,9 @@ $colorSecondaryHover: #cfd5e4
 $colorWhite: #ffffff
 $colorWhiteHover: #fafbfd
 
+*
+  overflow-anchor: none
+
 body
   font-family: 'Poppins','sans-serif'
   color: $colorBody
@@ -185,14 +188,19 @@ header.scrolled
   &-thumbnail
     width: 100%
     @apply rounded-xl
+  &-img
+    &-vertical
+      @apply mt-4 w-96 border-2 border-dashed border-secondary-hover p-3
+  &-quotes
+    @apply border-2 border-dashed border-secondary-hover p-3 ft-h text-secondary
 
 .form
   &-input
-    @apply py-2 px-4 border border-primary-hover rounded-xl w-full
+    @apply py-3 px-4 border border-secondary-hover rounded-xl shadow-lg w-full
     &:focus
       outline: none
     &-article-recommend
-      @apply mt-3 bg-white border border-primary-hover rounded-xl overflow-hidden
+      @apply mt-3 bg-white border border-secondary-hover rounded-xl shadow-lg overflow-hidden
 
 .text
   &-justify

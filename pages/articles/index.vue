@@ -2,13 +2,14 @@
   <div class="site-content">
     <section class="section-standart bg-body">
       <div class="waves-deepblue-bottom"></div>
-      <div class="container mx-auto px-4 text-center">
-        <h2 class="ft-h-bold text-white text-3xl lg:text-5xl font-bold leading-tight">Artikel</h2>
+      <div class="container mx-auto px-4 text-center grid gap-6">
+        <h2 class="ft-h-bold text-white text-3xl lg:text-5xl font-bold leading-tight">Artikel Uang Kerja</h2>
+        <p class="text-secondary italic">Berita terbaru tentang personal finance, investasi di Indonesia.</p>
       </div>
     </section>
-    <section class="section-standart mt-12 lg:mt-0">
+    <section class="section-standart mt-12 lg:mt-8">
       <div class="container mx-auto">
-        <div class="flex flex-col-reverse lg:flex-row items-start gap-16">
+        <div class="flex flex-col-reverse lg:flex-row items-start gap-8 lg:gap-16">
           <div class="w-full lg:w-8/12">
             <div class="mb-8" v-if="search.submit && search.query_result">
               <p>
@@ -16,7 +17,7 @@
               </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <nuxt-link :to="'articles/slug/'+item.slug" v-for="(item, index) of paginated_articles" :key="index">
+              <nuxt-link :to="{ name: 'articles-slug', params: { slug: item.slug } }" v-for="(item, index) of paginated_articles" :key="index">
                 <div class="shadow-lg hover:shadow-xl rounded-xl h-96">
                   <img :src="item.img" :alt="item.alt" class="w-full h-48 object-cover rounded-xl">
                   <div class="p-6 flex flex-col gap-4">
@@ -55,12 +56,20 @@ import ArticleSearch from '@/components/basics/ArticleSearch'
 import Pagination from '@/components/basics/Pagination'
 export default {
   layout: 'app',
+  head: {
+    title: 'Artikel - Uang Kerja',
+  },
   async asyncData({ $content, query, error }) {
-    const content = await getContent($content, query, error);
-    return {
-      articles: content.allArticles,
-      paginated_articles: content.paginatedArticles,
-    };
+    try {
+      const content = await getContent($content, query, error);
+      return {
+        articles: content.allArticles,
+        paginated_articles: content.paginatedArticles,
+      };
+    }
+    catch (err) {
+      error(err)
+    }
   },
   components: { ArticleSearch, Pagination },
   data() {
@@ -76,12 +85,11 @@ export default {
     searchFlow: async function () {
       this.search.submit = true
       this.search.query_result = this.search.query
-      const articles = await this.$content('articles')
-      .search(this.search.query)
-      .only(['title', 'date', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
-      .sortBy('date', 'desc')
-      .fetch()
-      this.articles = articles
+      const query = this.$route.query
+      query.search = this.search.query
+      const content = await getContent(this.$content, query, this.$nuxt.error);
+      this.articles = content.allArticles
+      this.paginated_articles = content.paginatedArticles
     },
     paginationEvent: async function () {
       const content = await getContent(this.$content, this.$route.query, this.$nuxt.error);

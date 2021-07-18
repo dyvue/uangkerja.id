@@ -1,5 +1,4 @@
 ---
-hero: Pemula Reksadana
 title: Apakah itu Ransomware?
 date: July 01, 2021
 description: Ransomware adalah sebuah jenis malware (perangkat lunak jahat) yang dapat muncul melalui berbagai cara, bertujuan untuk mempengaruhi sistem secara individual maupun sistem yang berada dalam sebuah jaringan bisnis, rumah sakit, bandara, maupun lembaga pemerintahan.
@@ -23,7 +22,7 @@ author: Romadhan Edy Prasetyo
 
 <div class="text-justify grid gap-4">
   <h6 class="ft-h text-primary font-bold">Bagaimana jatuhnya korban?</h6>
-  <ul>
+  <ul class="grid gap-2">
     <li>
       <p>Phishing: sebuah bentuk perulangan dari rekayasa sosial. Di dalam konteks ransomware, email phishing adalah salah satu bentuk dari distribusi malware yang paling umum digunakan. Para korban biasanya terinfeksi melalui lampiran email yang sudah terlebih dahulu terinfeksi atau tautan yang disamarkan menjadi serupa dengan tautan yang sah. Di dalam sebuah jaringan komputer, satu korban saja cukup untuk menginfeksi seluruh organisasi.</p>
     </li>
@@ -42,7 +41,7 @@ author: Romadhan Edy Prasetyo
 
 <div class="text-justify grid gap-4">
   <h6 class="ft-h text-primary font-bold">Bagaimana cara untuk melindungi diri anda dari serangan ransomware?</h6>
-  <ul>
+  <ul class="grid gap-2">
     <li>
       <p>Buatlah cadangan arsip secara berkala menggunakan sumber eksternal sehingga anda dapat mengembalikan ulang arsip anda setelah potensi infeksi dihapus. </p>
     </li>
@@ -72,14 +71,14 @@ author: Romadhan Edy Prasetyo
   <h6 class="ft-h text-primary font-bold">Contoh-contoh ransomware</h6>
   <p><b>GrandCrab (2018)</b></p>
   <p>Pertama kali muncul pada Januari 2018, ransomware tersebut menelan lebih dari 50.000 korban dalam kurun waktu kurang dari satu bulan, sebelum digagalkan dan dicegah oleh hasil upaya gabungan lembaga otoritas Romania bersama dengan Bitdefender dan Europol (sebuah paket pemulihan data tersedia secara cuma-cuma). GrandCrab tersebar melalui malvertising dan phishing email dan merupakan ransomware pertama yang menuntut pembayaran tebusan dalam bentuk mata uang digital DASH. Tebusan awal bervariasi dari 300 sampai dengan 1500 Dolar Amerika.</p>
-  <img src="https://i.ibb.co/P9r00KZ/image.webp" class="mt-4 w-96 border-2 border-dashed border-secondary-hover p-3">
+  <img src="https://i.ibb.co/P9r00KZ/image.webp" class="article-img-vertical">
   <p><b>WannaCry (2017)</b></p>
   <p>Sebuah serangan cyber berskala dunia yang menginfeksi lebih dari 300.000 komputer dalam kurun waktu 4 hari. WannaCry tersebar luas melalui sebuah eksploit yang dikenal sebagai EternalBlue dan menjadikan sistem operasi Microsoft Windows sebagai sasaran (kebanyakan komputer yang terinfeksi menggunakan Windows 7). Serangan tersebut terhenti setelah adanya pembaharuan sistem darurat yang dirilis oleh Microsoft. Ahli keamanan Amerika Serikat menyatakan bahwa Korea Utara bertanggung jawab atas serangan tersebut, walaupun tidak ada bukti yang dapat disediakan.</p>
-  <img src="https://i.ibb.co/GHcq7yG/image-1.webp" class="mt-4 w-96 border-2 border-dashed border-secondary-hover p-3">
+  <img src="https://i.ibb.co/GHcq7yG/image-1.webp" class="article-img-vertical">
   <p><b>Bad Rabbit (2017)</b></p>
   <p>Sebuah ransomware yang disebarkan sebagai pembaharuan palsu Adobe Flash yang diunduh dari situs yang terinfeksi. Komputer yang terinfeksi kebanyakan berlokasi di Rusia dan infeksi tersebut bergantung kepada instalasi manual untuk sebuah arsip .exe. Harga untuk dekripsi adalah kurang lebih 280 Dolar Amerika pada waktu tersebut (0.05 BTC).</p>
-  <img src="https://i.ibb.co/x5yP1PN/image-2.webp" class="mt-4 w-96 border-2 border-dashed border-secondary-hover p-3">
+  <img src="https://i.ibb.co/x5yP1PN/image-2.webp" class="article-img-vertical">
   <p><b>Locky (2016)</b></p>
   <p>Biasanya disebarkan sebagai email sebuah faktur yang membutuhkan pembayaran yang mengandung lampiran yang terinfeksi. Di tahun 2016, pusat medis Hollywood Presbyterian terinfeksi oleh malware Locky dan membayar 40 BTC uang tebusan (setara dengan 17.000 Dolar Amerika pada saat itu) untuk mendapatkan kembali akses ke dalam sistem komputer rumah sakit tersebut.</p>
-  <img src="https://i.ibb.co/x7T3CQX/image-3.webp" class="mt-4 w-96 border-2 border-dashed border-secondary-hover p-3">
+  <img src="https://i.ibb.co/x7T3CQX/image-3.webp" class="article-img-vertical">
 </div>

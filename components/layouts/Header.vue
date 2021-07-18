@@ -92,7 +92,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-primary-hover h-1 absolute bottom-0 left-0" :style="{'width': view.scroll_indicator+'%'}" v-if="this.$route.name === 'articles-slug-slug'"></div>
+    <div class="bg-primary-hover h-1 absolute bottom-0 left-0" :style="{'width': view.scroll_indicator+'%'}" v-if="this.$route.name === 'articles-slug'"></div>
   </header>
 </template>
 
@@ -134,7 +134,7 @@ export default {
         if (!this.view.top_of_page) this.view.top_of_page = true
       }
 
-      if (this.$route.name === 'articles-slug-slug') {
+      if (this.$route.name === 'articles-slug') {
         this.handleScrollIndicator()
       }
     },
