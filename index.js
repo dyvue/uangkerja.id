@@ -1,12 +1,16 @@
 const http          = require('http'),
 express             = require('express'),
-socketio            = require('socket.io'),
 formatMessage       = require('./utils/messages'),
 UUser               = require('./utils/users')
 
 const app           = express(),
 server              = http.createServer(app),
-io                  = socketio(server)
+socketio            = require('socket.io'),
+io                  = socketio(server, {
+    cors: {
+        origin: '*',
+    }
+})
 
 const botName       = 'Bot uangkerja.id'
 
@@ -56,6 +60,6 @@ io.on('connection', socket => {
 
 app.use(express.static(__dirname + '/public'))
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 7000
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`))
