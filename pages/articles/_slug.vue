@@ -18,7 +18,8 @@
             <p class="flex gap-1">
               <span class="bg-primary text-white px-2 py-1 rounded capitalize text-sm" v-for="(item_tag, index_tag) of article.tags" :key="index_tag">{{ item_tag }}</span>
             </p>
-            <img :src="article.img" :alt="article.alt" class="article-thumbnail">
+            <img :src="article.img" :alt="article.alt" class="article-thumbnail" @click="lightboxTogglerClick()">
+            <Lightbox :toggler="lightbox_toggler" :sources="article.img" :alt="article.alt"/>
             <nuxt-content :document="article" />
           </article>
           <div class="hidden lg:block w-full lg:w-4/12">
@@ -33,7 +34,7 @@
 </template>
 
 <script>
-
+import Lightbox from '@/components/basics/Lightbox'
 export default {
   layout: 'app',
   head() {
@@ -59,5 +60,16 @@ export default {
       error({ statusCode: 404, message: "Post not found" })
     }
   },
+  components: { Lightbox },
+  data() {
+    return {
+      lightbox_toggler: false
+    };
+  },
+  methods: {
+    lightboxTogglerClick: function () {
+      this.lightbox_toggler = !this.lightbox_toggler
+    }
+  }
 }
 </script>

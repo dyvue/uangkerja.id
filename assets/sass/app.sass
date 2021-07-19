@@ -49,6 +49,14 @@ header
 header.scrolled
   box-shadow: rgb(14 31 80 / 30%) 0px 2px 12px
 
+.fade-enter-active,
+.fade-leave-active
+  transition: opacity .4s
+
+.fade-enter,
+.fade-leave-to
+  opacity: 0
+
 .site-content
   margin-top: 80px
 
@@ -187,7 +195,7 @@ header.scrolled
 .article
   &-thumbnail
     width: 100%
-    @apply rounded-xl
+    @apply rounded-xl cursor-move
   &-img
     &-vertical
       @apply mt-4 w-96 border-2 border-dashed border-secondary-hover p-3
