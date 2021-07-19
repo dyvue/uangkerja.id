@@ -60,5 +60,5 @@ author: Romadhan Edy Prasetyo
 <div class="text-justify grid gap-4">
   <h6 class="ft-h text-primary font-bold">Tips Investasi</h6>
   <p><b>Kamu akan merasa aman, bila mempunyai dana darurat</b> karena bisa membiayai kebutuhan saat mendesak. Jadi tidak perlu menggunakan dana kebutuhan sehari-hari atau investasi.</p>
-  <p>Sebaiknya, kamu hanya pakai saat kondisi darurat dan sedia selalu. Maka perlu disimpan secara aman. Contohnya simpan di <a href="https://faq.bibit.id/id/article/apa-itu-reksa-dana-pasar-uang-helga8/" target="_blank">reksa dana pasar uang</a> yang tidak ada biaya admin dan imbal hasil lebih tinggi dari suku bunga tabungan konvensional.</p>
+  <p>Sebaiknya, kamu hanya pakai saat kondisi darurat dan sedia selalu. Maka perlu disimpan secara aman. Contohnya simpan di reksa dana pasar uang yang tidak ada biaya admin dan imbal hasil lebih tinggi dari suku bunga tabungan konvensional.</p>
 </div>
