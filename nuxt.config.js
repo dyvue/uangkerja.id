@@ -73,11 +73,11 @@ export default {
   },
 
   googleAnalytics: {
-    id: "G-ETTVT8FB4L",
+    id: "UA-203336253-1",
   },
   publicRuntimeConfig: {
     googleAnalytics: {
-      id: "G-ETTVT8FB4L"
+      id: "UA-203336253-1"
     }
   }
 }
