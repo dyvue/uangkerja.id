@@ -19,12 +19,16 @@ export default {
       { property:"og:image", content:"https://www.uangkerja.id/img/logo-hr.png"},
       { property:"og:image:width", content:"786"},
       { property:"og:image:height", content:"203"},
-      { name:"twitter:card", content:"summary_large_image"},
+      { name:"fb:app_id", content:"140925271430563"},
+      { name:"twitter:card", content:"summary"},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css' }
-    ]
+    ],
+    script: [
+      { src: '/js/analytics/facebook.js' }
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
