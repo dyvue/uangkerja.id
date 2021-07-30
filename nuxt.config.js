@@ -19,7 +19,7 @@ export default {
       { property:"og:image", content:"https://www.uangkerja.id/img/logo-hr.png"},
       { property:"og:image:width", content:"786"},
       { property:"og:image:height", content:"203"},
-      { name:"fb:app_id", content:"140925271430563"},
+      { property:"fb:app_id", content:"140925271430563"},
       { name:"twitter:card", content:"summary"},
     ],
     link: [
