@@ -41,26 +41,10 @@ export default {
     return {
       title: this.article.title + ' - Uang Kerja',
       meta: [
-        {
-          hid: 'og:url',
-          name: 'og:url',
-          content: "https://www.uangkerja.id/" + this.article.slug
-        },
-        {
-          hid: 'og:title',
-          name: 'og:title',
-          content: this.article.title + ' - Uang Kerja'
-        },
-        {
-          hid: 'og:description',
-          name: 'og:description',
-          content: this.article.description
-        },
-        {
-          hid: 'og:image',
-          name: 'og:image',
-          content: this.article.img
-        },
+        { hid: 'og:url', property:"og:url", content:"https://www.uangkerja.id/" + this.article.slug},
+        { hid: 'og:title', property:"og:title", content:this.article.title + ' - Uang Kerja'},
+        { hid: 'og:description', property:"og:description", content:this.article.description},
+        { hid: 'og:image', property:"og:image", content:this.article.img},
       ],
     }
   },
