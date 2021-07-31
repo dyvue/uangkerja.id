@@ -70,7 +70,7 @@ export default (meta) => {
     },
     { 
       hid: "fb:app_id",
-      name: "fb:app_id", 
+      property: "fb:app_id", 
       content: (meta && meta.fbAppId) || fbAppId,
     }
   ];
