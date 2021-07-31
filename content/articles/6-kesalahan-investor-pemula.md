@@ -1,13 +1,14 @@
 ---
 title: 6 Kesalahan Investor Pemula
 date: July 19, 2021
+date_format: 2021-07-19
 description: Orang dewasa yang ditekan untuk menanggung kebutuhan orang tua dan anak-anak yang sedang bertumbuh disebut dengan sandwich generation. Kenapa disebut dengan istilah sandwich generation ?  Ini karena mereka sering ditempatkan pada posisi untuk mengasuh anak dan orang tua mereka secara bersamaan, dan dukungan ini seringkali bersifat emosional dan finansial.
 img: https://i.ibb.co/7WKKF9Z/kesalahan-investor-pemula.webp
 alt: 6 Kesalahan Investor Pemula
 tags: 
-  - investor
+  - investasi
   - pemula
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

@@ -1,13 +1,14 @@
 ---
 title: Lebih Baik Mana, Obligasi Atau Reksa Dana Obligasi?
 date: July 20, 2021
+date_format: 2021-07-20
 description: Mengetahui perbedaan antara obligasi dan reksa dana obligasi dapat menjadi titik awal menemukan cara optimal dalam berinvestasi obligasi.
 img: https://images.squarespace-cdn.com/content/v1/5bd82ac99b8fe8178d5bc6e9/1626653161092-37T6RINM8M1IWB4YUAQV/unsplash-image-dAmHWsRYP9c.jpg?format=2500w
 alt: Lebih Baik Mana, Obligasi Atau Reksa Dana Obligasi?
 tags: 
   - reksadana
   - investasi
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

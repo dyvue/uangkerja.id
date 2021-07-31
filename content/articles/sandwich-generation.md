@@ -1,13 +1,14 @@
 ---
 title: Sandwich Generation
 date: July 18, 2021
+date_format: 2021-07-18
 description: Orang dewasa yang ditekan untuk menanggung kebutuhan orang tua dan anak-anak yang sedang bertumbuh disebut dengan sandwich generation. Kenapa disebut dengan istilah sandwich generation ?  Ini karena mereka sering ditempatkan pada posisi untuk mengasuh anak dan orang tua mereka secara bersamaan, dan dukungan ini seringkali bersifat emosional dan finansial.
 img: https://i.ibb.co/VptRwrM/sandwich-generation.jpg
 alt: Sandwich Generation
 tags: 
   - finansial
   - sandwich generation
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

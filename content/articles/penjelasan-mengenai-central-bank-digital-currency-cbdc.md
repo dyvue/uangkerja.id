@@ -1,13 +1,14 @@
 ---
 title: Penjelasan Mengenai Central Bank Digital Currency (CBDC)
 date: July 16, 2021
+date_format: 2021-07-16
 description: Central bank digital currency (CBDC) adalah bentuk digital dari mata uang fiat. Dengan begitu, CBDC ditetapkan sebagai uang oleh kebijakan pemerintah.
 img: https://i.ibb.co/gFhdfJ7/image-4.webp
 alt: Penjelasan Mengenai Central Bank Digital Currency (CBDC)
 tags: 
   - blockchain
   - ekonomi
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

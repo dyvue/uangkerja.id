@@ -25,7 +25,7 @@
                       <span class="bg-primary text-white px-2 py-1 rounded capitalize text-sm truncate" v-for="(item_tag, index_tag) of item.tags" :key="index_tag">{{ item_tag }}</span>
                     </p>
                     <h3 class="ft-h-article text-body truncate">{{ item.title }}</h3>
-                    <p class="text-secondary text-sm"><i class="fi fi-clock mr-2"></i>{{ item.date }}</p>
+                    <p class="text-secondary text-sm"><i class="fi fi-clock mr-2"></i>{{ item.date }} by {{ item.author }}</p>
                   </div>
                 </div>
               </nuxt-link>

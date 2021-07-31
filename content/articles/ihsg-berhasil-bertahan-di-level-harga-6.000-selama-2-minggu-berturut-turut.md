@@ -1,6 +1,7 @@
 ---
 title: IHSG Berhasil Bertahan di Level Harga 6.000 Selama 2 Minggu Berturut-turut
 date: July 13, 2021
+date_format: 2021-07-13
 description: Indeks Harga Saham Gabungan (IHSG) berhasil naik 0,25% dari harga 6.024 pada 5 Juli ke harga 6.039 pada 9 Juli. Ditengah sentimen negatif dari PPKM Darurat dan penyebaran COVID-19.
 img: https://images.squarespace-cdn.com/content/v1/5bd82ac99b8fe8178d5bc6e9/1626052460874-OTT54K5U923U9W4QBJBG/unsplash-image-mAxA2OmTmKA.jpg?format=1000w
 alt: IHSG Berhasil Bertahan di Level Harga 6.000 Selama 2 Minggu Berturut-turut
@@ -8,7 +9,7 @@ tags:
   - saham
   - investasi
   - trading
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

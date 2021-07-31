@@ -1,6 +1,7 @@
 ---
 title: Apa Itu Bear Market?
 date: July 23, 2021
+date_format: 2021-07-23
 description: Bear market dapat digambarkan sebagai periode penurunan harga di pasar keuangan.
 img: https://i.ibb.co/LSq38Y1/bear-market.webp
 alt: Apa Itu Bear Market?
@@ -8,7 +9,7 @@ tags:
   - investasi
   - trading
   - ekonomi
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

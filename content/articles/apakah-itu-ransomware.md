@@ -1,13 +1,14 @@
 ---
 title: Apakah itu Ransomware?
 date: July 01, 2021
+date_format: 2021-07-01
 description: Ransomware adalah sebuah jenis malware (perangkat lunak jahat) yang dapat muncul melalui berbagai cara, bertujuan untuk mempengaruhi sistem secara individual maupun sistem yang berada dalam sebuah jaringan bisnis, rumah sakit, bandara, maupun lembaga pemerintahan.
 img: https://i.ibb.co/b6mYvDs/Apakah-itu-Ransomware.jpg
 alt: Apakah itu Ransomware?
 tags: 
   - teknologi
   - keamanan
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

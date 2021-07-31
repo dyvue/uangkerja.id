@@ -13,7 +13,7 @@
           <article id="article" class="article w-full lg:w-8/12 grid gap-6">
             <h2 class="ft-h-article">{{ article.title }}</h2>
             <p class="text-secondary">
-              {{ article.date }}
+              {{ article.date }} by {{ article.author }}
             </p>
             <p class="flex gap-1">
               <span class="bg-primary text-white px-2 py-1 rounded capitalize text-sm" v-for="(item_tag, index_tag) of article.tags" :key="index_tag">{{ item_tag }}</span>

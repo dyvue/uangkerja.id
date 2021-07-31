@@ -1,6 +1,7 @@
 ---
 title: Apa Itu Bull Market?
 date: July 24, 2021
+date_format: 2021-07-24
 description: Bull market (atau bull run) merupakan keadaan pasar keuangan yang menunjukkan kenaikan harga.
 img: https://i.ibb.co/4jYyjh4/image-8.webp
 alt: Apa Itu Bull Market?
@@ -8,7 +9,7 @@ tags:
   - investasi
   - trading
   - ekonomi
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

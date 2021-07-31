@@ -26,9 +26,9 @@
             </div>
             <div class="flex flex-col gap-8">
               <h6 class="ft-h text-primary font-bold">Meet the Team</h6>
-              <div class="flex gap-6">
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
                 <a href="https://www.romadhanedy.my.id/" target="_blank">
-                  <div class="relative overflow-hidden shadow-lg rounded-3xl w-48 h-84">
+                  <div class="relative overflow-hidden shadow-lg rounded-3xl w-full h-84">
                     <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEgWrP_QQtr4w/profile-displayphoto-shrink_800_800/0/1582360031774?e=1632960000&v=beta&t=AkFHhBoBgrc1llMTscuSYwIximcwRf6NvksHMawO4g0" alt="Romadhan Edy Prasetyo" class="w-full object-cover rounded-3xl">
                     <div class="p-4 class grid gap-2">
                       <span class="ft-h font-bold">Romadhan Edy Prasetyo</span>
@@ -37,10 +37,10 @@
                   </div>
                 </a>
                 <a href="javascript:void(0)" target="_blank">
-                  <div class="relative overflow-hidden shadow-lg rounded-3xl w-48 h-84">
+                  <div class="relative overflow-hidden shadow-lg rounded-3xl w-full h-84">
                     <img src="https://media.istockphoto.com/vectors/question-mark-icon-flat-vector-illustration-design-vector-id1162198273?k=6&m=1162198273&s=612x612&w=0&h=3V-VGVRpaD77MFXao1_ZjoTXI8E2KjOJLYOlbv1DDIs=" alt="Romadhan Edy Prasetyo" class="w-full object-cover rounded-3xl">
                     <div class="p-4 class grid gap-2">
-                      <a href="mailto:uangkerja.id@gmail.com" class="btn btn-primary">Be One of Us</a>
+                      <a href="https://github.com/dyvue/uangkerja.id/tree/app/website" target="_blank" class="btn text-center">Contribute</a>
                     </div>
                   </div>
                 </a>

@@ -1,6 +1,7 @@
 ---
 title: Apa Itu Dogecoin?
 date: July 22, 2021
+date_format: 2021-07-22
 description: Dogecoin merupakan salah satu mata uang kripto meme yang paling terkenal sepanjang waktu. Hebatnya, sifat komedi tidak merusak kelangsungan hidupnya. Koin ini justru membanggakan komunitas penggunanya yang berdedikasi, yang telah menggalang dana untuk sejumlah inisiatif selama bertahun-tahun.
 img: https://i.ibb.co/SJXZqwq/image-11.webp
 alt: Apa Itu Dogecoin?
@@ -8,7 +9,7 @@ tags:
   - cryptocurrency
   - blockchain
   - sejarah
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

@@ -7,13 +7,13 @@ export default async ($content, params, error) => {
     allArticles = await $content('articles')
     .search(params.search)
     .only(['title', 'date', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
-    .sortBy('date', 'desc')
+    .sortBy('date_format', 'desc')
     .fetch();
   }
   else {
     allArticles = await $content('articles')
     .only(['title', 'date', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
-    .sortBy('date', 'desc')
+    .sortBy('date_format', 'desc')
     .fetch();
   }
 
@@ -40,7 +40,7 @@ export default async ($content, params, error) => {
     paginatedArticles = await $content("articles")
     .search(params.search)
     .only(['title', 'date', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
-    .sortBy('date', 'desc')
+    .sortBy('date_format', 'desc')
     .skip(skipNumber())
     .limit(perPage)
     .fetch();
@@ -48,7 +48,7 @@ export default async ($content, params, error) => {
   else {
     paginatedArticles = await $content("articles")
     .only(['title', 'date', 'description', 'img', 'alt', 'slug', 'tags', 'author'])
-    .sortBy('date', 'desc')
+    .sortBy('date_format', 'desc')
     .skip(skipNumber())
     .limit(perPage)
     .fetch();

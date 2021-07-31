@@ -1,13 +1,14 @@
 ---
 title: Penjelasan Mengenai Siasat Piramida dan Ponzi
 date: July 02, 2021
+date_format: 2021-07-02
 description: Siasat Ponzi dinamakan dari nama Charles Ponzi, seorang penipu italia yang berpindah ke Amerika Utara dan menjadi sangat terkenal dikarenakan oleh sistem kecurangan yang ia gunakan untuk mendapatkan kekayaannya.
 img: https://i.ibb.co/jbQCnNj/Penjelasan-Mengenai-Siasat-Piramida-dan-Ponzi.jpg
 alt: Penjelasan Mengenai Siasat Piramida dan Ponzi
 tags: 
   - keamanan
   - ekonomi
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

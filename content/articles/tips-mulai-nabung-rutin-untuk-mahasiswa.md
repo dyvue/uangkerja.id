@@ -1,13 +1,14 @@
 ---
 title: Tips Mulai Nabung Rutin Untuk Mahasiswa
 date: July 14, 2021
+date_format: 2021-07-14
 description: Jika kamu Mahasiswa yang baru aware dengan pentingnya mengatur keuangan setelah nonton di Tik Tok maupun Youtube, mungkin masih bingung formula keuangan mana yang cocok.
 img: https://images.squarespace-cdn.com/content/v1/5bd82ac99b8fe8178d5bc6e9/1626080911222-LZCQCHTY1SA8I1WYQXND/unsplash-image-1zO4O3Z0UJA.jpg?format=2500w
 alt: Glosarium dan Pengetahuan Dasar Mengenai Reksadana.
 tags: 
   - nabung
   - reksadana
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

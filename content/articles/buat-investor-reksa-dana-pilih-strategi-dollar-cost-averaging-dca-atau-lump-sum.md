@@ -1,13 +1,14 @@
 ---
 title: Buat Investor Reksa Dana, Pilih Strategi Dollar Cost Averaging (DCA) atau Lump Sum?
 date: July 21, 2021
+date_format: 2021-07-21
 description: Berikut ini perbandingan investasi menggunakan strategi DCA vs Lump Sum
 img: https://images.squarespace-cdn.com/content/v1/5bd82ac99b8fe8178d5bc6e9/1626235632999-K28B217485V5I7ONZX2P/unsplash-image-qwtCeJ5cLYs.jpg?format=2500w
 alt: Buat Investor Reksa Dana, Pilih Strategi Dollar Cost Averaging (DCA) atau Lump Sum?
 tags: 
   - reksadana
   - investasi
-author: Romadhan Edy Prasetyo
+author: Romadhan
 ---
 
 <div class="text-justify grid gap-4">

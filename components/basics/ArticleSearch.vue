@@ -36,7 +36,7 @@ export default {
       this.articles = await this.$content("articles")
         .search(search_q)
         .only(['title', 'date', 'img', 'alt', 'slug'])
-        .sortBy('date', 'desc')
+        .sortBy('date_format', 'desc')
         .limit(5)
         .fetch()
     },
