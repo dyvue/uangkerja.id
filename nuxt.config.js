@@ -44,6 +44,7 @@ export default {
     '@nuxtjs/google-fonts',
     '@nuxtjs/google-analytics',
     '@nuxt/content',
+    '@nuxtjs/sitemap',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -83,23 +84,27 @@ export default {
     hostname: 'https://www.uangkerja.id/',
     gzip: true,
     trailingSlash: true,
-    routes: async () => {
-      const { $content } = require("@nuxt/content");
-      const articles = await $content({ deep: true })
-      .only(["slug", "date"])
-      .where({ published: { $eq: true } })
-      .fetch();
+    routes: [
+      '/about-us',
+      '/articles',
+      async () => {
+        const { $content } = require("@nuxt/content");
+        const articles = await $content({ deep: true })
+        .only(["slug", "date_format"])
+        .where({ published: { $eq: true } })
+        .fetch();
 
-      let routes = [];
+        let routes = [];
 
-      articles.forEach((article) => {
-        routes.push({
-          url: `/articles/${article.slug}`
-        })
-      });
-      
-      return routes;
-    }
+        articles.forEach((article) => {
+          routes.push({
+            url: `/articles/${article.slug}`
+          })
+        });
+        
+        return routes;
+      }
+    ]
   },
 
   router: {
