@@ -44,8 +44,8 @@ export default {
         type: "article",
         title: this.article.title + ' - Uang Kerja',
         description: this.article.description,
-        image: this.article.img,
-        url: "https://www.uangkerja.id/" + this.article.slug,
+        mainImage: this.article.img,
+        url: "https://www.uangkerja.id/articles/" + this.article.slug,
       };
       return utilsGetSiteMeta(metaData);
     }
@@ -60,7 +60,7 @@ export default {
         {
           hid: "canonical",
           rel: "canonical",
-          href: "https://www.uangkerja.id/" + this.article.slug,
+          href: "https://www.uangkerja.id/articles/" + this.article.slug,
         },
       ],
     };
