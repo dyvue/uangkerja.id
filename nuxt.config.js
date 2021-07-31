@@ -109,14 +109,8 @@ export default {
 
   loading: '@/components/layouts/Loading.vue',
 
-  globalName: 'uangkerja',
   globals: {
-    id: globalName => `__uangkerja`,
-    nuxt: globalName => `uangkerja`,
-    context: globalName => `${globalName.toUpperCase()}`,
-    pluginPrefix: globalName => `${globalName.toUpperCase()}`,
-    readyCallback: globalName => `on${globalName.toUpperCase()}Ready`,
-    loadedCallback: globalName => `_on${globalName.toUpperCase()}Loaded`
+    id: globalName => `__uangkerja`
   },
 
   build: {
