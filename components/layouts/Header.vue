@@ -17,13 +17,13 @@
             Tentang Kami
           </nuxt-link>
           <nuxt-link to="/articles" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('articles')">
-            Artikel
+            Berita dan Artikel
           </nuxt-link>
           <a href="javascript:void(0)" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive(['catatan-keuangan', 'live-chat'])">
             Fitur Unggulan
             <i class="ml-2 fi fi-angle-down"/>
             <div class="navbar-child">
-              <nuxt-link to="/financial-recodrs" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
+              <nuxt-link to="/financial-records" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
                 Catatan Keuangan
               </nuxt-link>
               <nuxt-link to="/robo-advisor" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
@@ -52,12 +52,12 @@
             <div class="mt-6">
               <div @click="sidebarClick()">
                 <nuxt-link to="/about-us" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive('about-us')" @click="sidebarClick()">
-                  Tentang Kamiz
+                  Tentang Kami
                 </nuxt-link>
               </div>
               <div @click="sidebarClick()">
                 <nuxt-link to="/articles" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive('articles')" @click="sidebarClick()">
-                  Artikel
+                  Berita dan Artikel
                 </nuxt-link>
               </div>
               <a href="javascript:void(0)" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive(['catatan-keuangan', 'live-chat'])">
@@ -65,7 +65,7 @@
                 <i class="ml-2 fi fi-angle-down"/>
                 <div class="navbar-child">
                   <div @click="sidebarClick()">
-                    <nuxt-link to="/financial-recodrs" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
+                    <nuxt-link to="/financial-records" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
                       Catatan Keuangan
                     </nuxt-link>
                   </div>
@@ -88,7 +88,7 @@
           </div>
         </div>
         <div class="action-wrapper">
-          <button class="btn" @click="donate()">Donate</button>
+          <a href="https://github.com/dyvue/uangkerja.id/tree/app/website" target="_blank" class="btn">Contribute</a>
         </div>
       </div>
     </div>
@@ -143,9 +143,6 @@ export default {
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       var scrolled = (winScroll / height) * 100;
       this.view.scroll_indicator = scrolled
-    },
-    donate: function() {
-      alert("We haven't prepared the donation address yet, but thank you for your kindness :)")
     }
   }
 }

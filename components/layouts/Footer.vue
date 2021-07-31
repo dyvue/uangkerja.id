@@ -25,7 +25,7 @@
             <h5 class="text-secondary">Discover</h5>
             <div class="flex flex-col gap-2">
               <nuxt-link to="/articles" class="text-white hover:text-primary">
-                Artikel
+                Berita dan Artikel
               </nuxt-link>
               <nuxt-link to="/topics" class="text-white hover:text-primary">
                 Topik
@@ -75,7 +75,7 @@
       </div>
       <div class="mt-12 pt-6 border-t">
         <div class="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center gap-2">
-          <p class="text-secondary">@ 2021 Uang Kerja Media - UKM</p>
+          <p class="text-secondary">@ 2021 Uang Kerja Media</p>
         </div>
       </div>
     </div>

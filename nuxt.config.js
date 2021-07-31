@@ -1,3 +1,6 @@
+import getSiteMeta from './utils/getSiteMeta'
+const meta = getSiteMeta()
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -8,19 +11,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Let money work for you.' },
+      { hid: 'description', name: 'description', content: 'Platform edukasi keuangan untuk Zillennials.' },
       { name:"google-site-verification", content:"m1vN0vRt6dF6DQpnxKNikjn6U-y-DwcrO0cc6D3kk1s"},
-      { property:"og:locale", content:"id_ID"},
-      { property:"og:type", content:"website"},
-      { property:"og:site_name", content:"Uang Kerja"},
-      { hid:"og:url", property:"og:url", content:"https://www.uangkerja.id"},
-      { hid:"og:title", property:"og:title", content:"Uang Kerja - Let money work for you"},
-      { hid:"og:description", property:"og:description", content:"Platform edukasi keuangan untuk Zillennials."},
-      { hid:"og:image", property:"og:image", content:"https://www.uangkerja.id/img/logo-hr.png"},
-      { property:"og:image:width", content:"786"},
-      { property:"og:image:height", content:"203"},
-      { property:"fb:app_id", content:"140925271430563"},
-      { name:"twitter:card", content:"summary"},
+      { property: "og:site_name", content: "Uang Kerja" },
+      ...meta
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -83,5 +77,49 @@ export default {
     googleAnalytics: {
       id: "UA-203336253-1"
     }
-  }
+  },
+
+  sitemap: {
+    hostname: 'https://www.uangkerja.id/',
+    gzip: true,
+    trailingSlash: true,
+    routes: async () => {
+      const { $content } = require("@nuxt/content");
+      const articles = await $content({ deep: true })
+      .only(["slug", "date"])
+      .where({ published: { $eq: true } })
+      .fetch();
+
+      let routes = [];
+
+      articles.forEach((article) => {
+        routes.push({
+          url: `/articles/${article.slug}`
+        })
+      });
+      
+      return routes;
+    }
+  },
+
+  router: {
+    linkActiveClass: 'active',
+    linkExactActiveClass: 'link'
+  },
+
+  loading: '@/components/layouts/Loading.vue',
+
+  globalName: 'uangkerja',
+  globals: {
+    id: globalName => `__uangkerja`,
+    nuxt: globalName => `uangkerja`,
+    context: globalName => `${globalName.toUpperCase()}`,
+    pluginPrefix: globalName => `${globalName.toUpperCase()}`,
+    readyCallback: globalName => `on${globalName.toUpperCase()}Ready`,
+    loadedCallback: globalName => `_on${globalName.toUpperCase()}Loaded`
+  },
+
+  build: {
+    publicPath: '/__src'
+  },
 }

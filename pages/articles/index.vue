@@ -3,8 +3,8 @@
     <section class="section-standart bg-body">
       <div class="waves-deepblue-bottom"></div>
       <div class="container mx-auto px-4 text-center grid gap-6">
-        <h2 class="ft-h-bold text-white text-3xl lg:text-5xl font-bold leading-tight">Artikel Uang Kerja</h2>
-        <p class="text-secondary italic">Berita terbaru tentang personal finance, investasi di Indonesia.</p>
+        <h1 class="ft-h-bold text-white text-3xl lg:text-5xl font-bold leading-tight">Berita terbaru tentang <span class="text-primary-hover">Personal Finance</span> dan <span class="text-primary-hover">Investasi</span> di Indonesia.</h1>
+        <p class="text-secondary italic">Berita dan Artikel.</p>
       </div>
     </section>
     <section class="section-standart mt-12 lg:mt-8">
@@ -57,7 +57,7 @@ import Pagination from '@/components/basics/Pagination'
 export default {
   layout: 'app',
   head: {
-    title: 'Artikel - Uang Kerja',
+    title: 'Berita dan Artikel - Uang Kerja',
   },
   async asyncData({ $content, query, error }) {
     try {

@@ -5,7 +5,7 @@
         <div class="flex gap-3">
           <nuxt-link to="/">Home</nuxt-link>
           <span>></span>
-          <nuxt-link to="/articles">Artikel</nuxt-link>
+          <nuxt-link to="/articles">Berita dan Artikel</nuxt-link>
           <span>></span>
           <span class="text-secondary truncate">{{ article.title }}</span>
         </div>
@@ -34,19 +34,36 @@
 </template>
 
 <script>
+import utilsGetSiteMeta from '~/utils/getSiteMeta.js'
 import Lightbox from '@/components/basics/Lightbox'
 export default {
   layout: 'app',
+  computed: {
+    meta() {
+      const metaData = {
+        type: "article",
+        title: this.article.title + ' - Uang Kerja',
+        description: this.article.description,
+        image: this.article.img,
+        url: "https://www.uangkerja.id/" + this.article.slug,
+      };
+      return utilsGetSiteMeta(metaData);
+    }
+  },
   head() {
     return {
       title: this.article.title + ' - Uang Kerja',
       meta: [
-        { hid: 'og:url', property:"og:url", content:"https://www.uangkerja.id/" + this.article.slug},
-        { hid: 'og:title', property:"og:title", content:this.article.title + ' - Uang Kerja'},
-        { hid: 'og:description', property:"og:description", content:this.article.description},
-        { hid: 'og:image', property:"og:image", content:this.article.img},
+        ...this.meta,
       ],
-    }
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://www.uangkerja.id/" + this.article.slug,
+        },
+      ],
+    };
   },
   async asyncData({ $content, params, error }) {
     try {
