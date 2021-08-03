@@ -24,7 +24,8 @@
           </article>
           <div class="hidden lg:block w-full lg:w-4/12">
             <a href="https://bibit.id/" target="_blank">
-              <img src="https://i.ibb.co/6RPpBjy/bibit-ad-mobile.jpg" alt="Ads" class="w-full">
+              <img v-if="article.banner_ads" :src="article.banner_ads" alt="Ads" class="w-full">
+              <img v-else src="https://i.ibb.co/6RPpBjy/bibit-ad-mobile.jpg" alt="Ads" class="w-full">
             </a>
           </div>
         </div>
