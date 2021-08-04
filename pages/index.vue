@@ -4,7 +4,7 @@
       <div class="container mx-auto">
         <div class="flex flex-col-reverse lg:flex-row gap-12">
           <div class="w-full lg:w-1/2 flex flex-col justify-center lg:justify-start items-center lg:items-start text-center lg:text-left gap-6">
-            <h2 class="ft-h-bold text-4xl md:text-5xl font-bold leading-tight">Platform edukasi keuangan untuk Zillennials.</h2>
+            <h1 class="ft-h-bold text-4xl md:text-5xl font-bold leading-tight">Platform edukasi keuangan untuk Zillennials.</h1>
             <p class="text-secondary">Buat uang kerja untuk kita, jangan kita kerja untuk uang. Pelajari caranya gratis dan cocok untuk kaum Zillennials 👋.</p>
             <button class="btn btn-primary" @click="LinkStartLearn()">Mulai Pelajari</button>
           </div>
