@@ -85,6 +85,7 @@ export default {
     gzip: true,
     trailingSlash: true,
     routes: [
+      '/',
       '/about-us',
       '/articles',
       '/classroom'
