@@ -9,8 +9,7 @@
     <section class="section-standart mt-24">
       <div class="container mx-auto">
         <div class="flex flex-col justify-center items-center text-center gap-6">
-          <p class="text-secondary">Maaf website ini sedang dalam pembangunan. Kunjungi instagram kami untuk update info terkini.</p>
-          <a href="https://instagram.com/uangkerja.id" target="_blank" class="btn btn-primary">Instagram</a>
+          <p class="text-secondary">Segera Hadir untuk kamu.</p>
         </div>
       </div>
     </section>

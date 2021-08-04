@@ -81,29 +81,13 @@ export default {
   },
 
   sitemap: {
-    hostname: 'https://www.uangkerja.id/',
+    hostname: 'https://www.uangkerja.id',
     gzip: true,
     trailingSlash: true,
     routes: [
       '/about-us',
       '/articles',
-      async () => {
-        const { $content } = require("@nuxt/content");
-        const articles = await $content({ deep: true })
-        .only(["slug", "date_format"])
-        .where({ published: { $eq: true } })
-        .fetch();
-
-        let routes = [];
-
-        articles.forEach((article) => {
-          routes.push({
-            url: `/articles/${article.slug}`
-          })
-        });
-        
-        return routes;
-      }
+      '/classroom'
     ]
   },
 

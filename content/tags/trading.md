@@ -1,5 +1,0 @@
----
-name: trading
-description:
-img:
----

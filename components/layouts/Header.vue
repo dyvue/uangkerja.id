@@ -17,10 +17,13 @@
             Tentang Kami
           </nuxt-link>
           <nuxt-link to="/articles" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('articles')">
-            Berita dan Artikel
+            Artikel
+          </nuxt-link>
+          <nuxt-link to="/classroom" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('classroom')">
+            Ruang Kelas
           </nuxt-link>
           <a href="javascript:void(0)" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive(['catatan-keuangan', 'live-chat'])">
-            Fitur Unggulan
+            Layanan
             <i class="ml-2 fi fi-angle-down"/>
             <div class="navbar-child">
               <nuxt-link to="/financial-records" class="py-2 px-2 lg:px-4 navbar" :active="navbarActive('catatan-keuangan')">
@@ -57,11 +60,16 @@
               </div>
               <div @click="sidebarClick()">
                 <nuxt-link to="/articles" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive('articles')" @click="sidebarClick()">
-                  Berita dan Artikel
+                  Artikel
+                </nuxt-link>
+              </div>
+              <div @click="sidebarClick()">
+                <nuxt-link to="/classroom" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive('classroom')" @click="sidebarClick()">
+                  Ruang Kelas
                 </nuxt-link>
               </div>
               <a href="javascript:void(0)" class="py-4 px-2 lg:px-4 navbar" :active="navbarActive(['catatan-keuangan', 'live-chat'])">
-                Fitur Unggulan
+                Layanan
                 <i class="ml-2 fi fi-angle-down"/>
                 <div class="navbar-child">
                   <div @click="sidebarClick()">

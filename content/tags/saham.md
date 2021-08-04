@@ -1,5 +1,0 @@
----
-name: saham
-description:
-img:
----

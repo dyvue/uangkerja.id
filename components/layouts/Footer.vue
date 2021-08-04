@@ -25,7 +25,7 @@
             <h5 class="text-secondary">Discover</h5>
             <div class="flex flex-col gap-2">
               <nuxt-link to="/articles" class="text-white hover:text-primary">
-                Berita dan Artikel
+                Artikel
               </nuxt-link>
               <nuxt-link to="/topics" class="text-white hover:text-primary">
                 Topik

@@ -1,5 +1,0 @@
----
-name: investasi
-description:
-img:
----

@@ -2,12 +2,12 @@
   <div class="site-content">
     <section class="relative pt-1">
       <div class="container mx-auto border-t border-secondary-hover py-8">
-        <div class="flex gap-3">
+        <div class="flex gap-3 truncate">
           <nuxt-link to="/">Home</nuxt-link>
           <span>></span>
-          <nuxt-link to="/articles">Berita dan Artikel</nuxt-link>
+          <nuxt-link to="/articles">Artikel</nuxt-link>
           <span>></span>
-          <span class="text-secondary truncate">{{ article.title }}</span>
+          <span class="text-secondary">{{ article.title }}</span>
         </div>
         <div class="mt-12 flex gap-16">
           <article id="article" class="article w-full lg:w-8/12 grid gap-6">
@@ -23,9 +23,11 @@
             <nuxt-content :document="article" />
           </article>
           <div class="hidden lg:block w-full lg:w-4/12">
-            <a href="https://bibit.id/" target="_blank">
-              <img v-if="article.banner_ads" :src="article.banner_ads" alt="Ads" class="w-full">
-              <img v-else src="https://i.ibb.co/6RPpBjy/bibit-ad-mobile.jpg" alt="Ads" class="w-full">
+            <a v-if="article.ads_banner && article.ads_url" :href="article.ads_url" target="_blank">
+              <img :src="article.ads_banner" alt="Ads" class="w-full">
+            </a>
+            <a v-else href="https://bibit.id/" target="_blank">
+              <img src="https://i.ibb.co/6RPpBjy/bibit-ad-mobile.jpg" alt="Ads" class="w-full">
             </a>
           </div>
         </div>

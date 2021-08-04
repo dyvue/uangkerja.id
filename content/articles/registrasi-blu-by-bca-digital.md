@@ -2,14 +2,15 @@
 title: Registrasi Akun Blu by BCA Digital
 date: Aug 3, 2021
 date_format: 2021-08-03
-description: Lahir digital. Bank yang selalu ada tanpa jarak. Semudah itu, senyaman itu. Kami hadir buat kamu. Kami ya kamu.
+description: Setelah sekian lama ditunggu, akhirnya BCA resmi merilis aplikasi Blu yang merupakan bank digital dengan fitur keuangan menarik.
 img: https://i.ibb.co/WBLm3nx/bca-digital-169.jpg
 alt: Registrasi Akun Blu by BCA Digital
 tags: 
   - digital
   - bank
   - ekonomi
-banner_ads: https://i.ibb.co/gzpHsZj/210925163-496910901570382-6703009056768615388-n.jpg
+ads_banner: https://i.ibb.co/gzpHsZj/210925163-496910901570382-6703009056768615388-n.jpg
+ads_url: https://t.co/0GlDvcPN0o?amp=1
 author: Romadhan
 ---
 
@@ -84,5 +85,7 @@ author: Romadhan
 
 <div class="text-justify grid gap-4">
   <h6 class="ft-h text-primary font-bold">Registrasi akun blu by BCA Digital</h6>
-  <iframe width="350" height="800" src="https://www.youtube.com/embed/GXYqpkKVWjc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  <div style="position: relative; overflow: auto;">
+    <iframe width="350" height="800" src="https://www.youtube.com/embed/GXYqpkKVWjc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  </div>
 </div>
