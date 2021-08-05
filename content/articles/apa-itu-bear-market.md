@@ -9,7 +9,7 @@ tags:
   - investasi
   - trading
   - ekonomi
-author: Romadhan
+author: Binance Academy
 ---
 
 <div class="text-justify grid gap-4">
@@ -53,6 +53,7 @@ author: Romadhan
   <p>Perbedaannya cukup mudah. Di bull market, harga naik, sementara di bear market, harga turun.</p>
   <p>Satu perbedaan penting adalah bahwa bear market bisa memiliki periode konsolidasi yang panjang, disebut juga dengan aksi harga sideways atau ranging. Ini adalah saat-saat ketika volatilitas pasar cukup rendah, dan ada sedikit aktivitas pertrading yang terjadi. Walaupun hal yang sama mungkin berlaku di bull market, namun perilaku semacam ini lebih lazim di bear market. Bagaimanapun juga, harga jatuh dalam jangka waktu yang lama tidak terlalu menarik bagi sebagian besar investor.</p>
   <p>Hal lain yang perlu dipertimbangkan adalah apakah mungkin untuk memasuki posisi short. Jika tidak ada kemampuan untuk membuka posisi short dengan margin atau menggunakan derivatif, para trader hanya dapat mengekspresikan pandangan bearish mereka di pasar dengan menjual aset untuk mengamankan uang tunai atau stablecoin. Hal ini dapat menyebabkan downtrend berlarut-larut yang lebih panjang dengan sedikit minat beli, menghasilkan pergerakan harga sideways yang lambat.</p>
+  <p>Baca Juga: <a href="https://www.uangkerja.id/articles/apa-itu-bull-market">Apa Itu Bull Market?</a></p>
 </div>
 
 <br>

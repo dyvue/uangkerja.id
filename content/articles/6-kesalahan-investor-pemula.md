@@ -8,7 +8,7 @@ alt: 6 Kesalahan Investor Pemula
 tags: 
   - investasi
   - pemula
-author: Romadhan
+author: ternakuang.id
 ---
 
 <div class="text-justify grid gap-4">

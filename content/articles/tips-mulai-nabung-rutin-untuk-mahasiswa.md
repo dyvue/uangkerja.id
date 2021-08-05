@@ -8,7 +8,7 @@ alt: Glosarium dan Pengetahuan Dasar Mengenai Reksadana.
 tags: 
   - nabung
   - reksadana
-author: Romadhan
+author: bibit.id
 ---
 
 <div class="text-justify grid gap-4">

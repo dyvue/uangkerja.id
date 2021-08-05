@@ -9,7 +9,7 @@ tags:
   - saham
   - investasi
   - trading
-author: Romadhan
+author: bibit.id
 ---
 
 <div class="text-justify grid gap-4">

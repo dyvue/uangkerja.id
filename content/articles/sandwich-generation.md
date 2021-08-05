@@ -8,7 +8,7 @@ alt: Sandwich Generation
 tags: 
   - finansial
   - sandwich generation
-author: Romadhan
+author: ternakuang.id
 ---
 
 <div class="text-justify grid gap-4">

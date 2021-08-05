@@ -8,7 +8,7 @@ alt: Buat Investor Reksa Dana, Pilih Strategi Dollar Cost Averaging (DCA) atau L
 tags: 
   - reksadana
   - investasi
-author: Romadhan
+author: bibit.id
 ---
 
 <div class="text-justify grid gap-4">

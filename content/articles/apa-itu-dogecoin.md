@@ -9,7 +9,7 @@ tags:
   - cryptocurrency
   - blockchain
   - sejarah
-author: Romadhan
+author: Binance Academy
 ---
 
 <div class="text-justify grid gap-4">

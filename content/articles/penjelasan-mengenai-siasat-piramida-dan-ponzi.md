@@ -8,7 +8,7 @@ alt: Penjelasan Mengenai Siasat Piramida dan Ponzi
 tags: 
   - keamanan
   - ekonomi
-author: Romadhan
+author: Binance Academy
 ---
 
 <div class="text-justify grid gap-4">

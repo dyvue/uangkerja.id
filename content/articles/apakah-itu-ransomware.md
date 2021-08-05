@@ -8,7 +8,7 @@ alt: Apakah itu Ransomware?
 tags: 
   - teknologi
   - keamanan
-author: Romadhan
+author: Binance Academy
 ---
 
 <div class="text-justify grid gap-4">

@@ -11,7 +11,7 @@ tags:
   - ekonomi
 ads_banner: https://i.ibb.co/gzpHsZj/210925163-496910901570382-6703009056768615388-n.jpg
 ads_url: https://t.co/0GlDvcPN0o?amp=1
-author: Romadhan
+author: Uang Kerja
 ---
 
 <div class="text-justify grid gap-4">

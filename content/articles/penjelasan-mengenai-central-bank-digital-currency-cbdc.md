@@ -8,7 +8,7 @@ alt: Penjelasan Mengenai Central Bank Digital Currency (CBDC)
 tags: 
   - blockchain
   - ekonomi
-author: Romadhan
+author: Binance Academy
 ---
 
 <div class="text-justify grid gap-4">

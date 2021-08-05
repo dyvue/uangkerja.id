@@ -8,7 +8,7 @@ alt: Cara Menghitung Laba atas Investasi (ROI)
 tags: 
   - ekonomi
   - investasi
-author: Romadhan
+author: Binance Academy
 ---
 
 <div class="text-justify grid gap-4">
@@ -63,6 +63,7 @@ author: Romadhan
   <p>Namun, ROI tidak akan memperhitungkan aspek lain dari sebuah investasi. ROI yang lebih tinggi tidak berarti investasi yang lebih baik. Bagaimana jika Anda tidak dapat menemukan siapa pun yang ingin membeli investasi Anda dan terjebak dengannya untuk jangka waktu yang lama? Bagaimana jika investasi dasarnya memiliki likuiditas yang buruk?</p>
   <p>Faktor lain yang perlu dipertimbangkan adalah risiko. Sebuah investasi mungkin memiliki ROI yang sangat prospektif, tetapi apa risikonya? Jika terdapat kemungkinan yang tinggi bahwa investasi tersebut menjadi nol atau bahwa dana Anda akan menjadi tidak dapat diakses, maka ROI yang prospektif tidak begitu penting. Mengapa? Risiko memiliki aset ini untuk jangka panjang sangat tinggi. Memang betul bahwa potensi reward-nya juga dapat menjadi tinggi, tetapi kehilangan seluruh investasi awal tentu tidak diinginkan.</p>
   <p>Hanya melihat pada ROI saja tidak akan memberikan wawasan mengenai keamanannya, jadi Anda harus mempertimbangkan metrik lainnya juga. Anda dapat memulai dengan menghitung rasio risk/reward untuk setiap perdagangan dan investasi. Dengan cara ini, Anda bisa mendapatkan gambaran yang lebih baik mengenai kualitas setiap taruhan. Selain itu, beberapa analis pasar saham juga dapat mempertimbangkan faktor lain saat mengevaluasi investasi potensial. Faktor ini dapat mencakup aliran kas, suku bunga, pajak keuntungan modal, laba atas ekuitas (ROE), dan lainnya.</p>
+  <p>Baca Juga: <a href="https://www.uangkerja.id/articles/mengenal-istilah-margin-dalam-bisnis-dan-trading">Mengenal Istilah Margin dalam Bisnis dan Trading</a></p>
 </div>
 
 <br>

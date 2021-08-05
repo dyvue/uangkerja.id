@@ -9,7 +9,7 @@ tags:
   - investasi
   - trading
   - ekonomi
-author: Romadhan
+author: Binance Academy
 ---
 
 <div class="text-justify grid gap-4">
@@ -51,6 +51,7 @@ author: Romadhan
   <p>Masing-masing memiliki cara terbaik untuk mentradingkannya. Dalam bull market, trader dan investor umumnya akan membuka posisi long. Sementara di bear market, mereka akan membuka posisi short atau tetap bertahan di fiat.</p>
   <p>Dalam beberapa kasus, tetap bertahan di fiat (atau stablecoin) juga dapat berarti membuka posisi short terhadap pasar, karena diperkirakan harga akan turun. Perbedaan utamanya, tetap bertahan di fiat berarti menjaga modal, sementara membuka posisi short berarti mengambil laba dari penurunan harga aset. Tetapi jika Anda menjual aset, berharap untuk membelinya kembali dengan harga lebih rendah, Anda pada dasarnya ada dalam posisi short – meskipun tidak langsung mendapat laba dari penurunan harga.</p>
   <p>Satu hal lagi yang perlu dipertimbangkan adalah biaya. Tetap bertahan di stablecoin tidak akan dikenakan biaya, karena biasanya tidak ada biaya kustodian. Namun, short biasanya dikenakan biaya pendanaan atau suku bunga demi menjaga posisi terbuka. Inilah sebabnya mengapa futures triwulan mungkin ideal untuk posisi short jangka panjang, karena tidak ada biaya pendanaan yang terkait.</p>
+  <p>Baca Juga: <a href="https://www.uangkerja.id/articles/apa-itu-bear-market">Apa Itu Bear Market?</a></p>
 </div>
 
 <br>

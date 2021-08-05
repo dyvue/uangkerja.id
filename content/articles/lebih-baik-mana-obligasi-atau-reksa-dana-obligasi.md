@@ -8,7 +8,7 @@ alt: Lebih Baik Mana, Obligasi Atau Reksa Dana Obligasi?
 tags: 
   - reksadana
   - investasi
-author: Romadhan
+author: bibit.id
 ---
 
 <div class="text-justify grid gap-4">
