@@ -9,7 +9,7 @@
           <span>></span>
           <span class="text-secondary">{{ article.title }}</span>
         </div>
-        <div class="mt-12 flex gap-16">
+        <div class="mt-12 flex flex-col lg:flex-row gap-16">
           <article id="article" class="article w-full lg:w-8/12 grid gap-6">
             <h2 class="ft-h-article">{{ article.title }}</h2>
             <p class="text-secondary">
@@ -22,7 +22,7 @@
             <Lightbox :toggler="lightbox_toggler" :sources="article.img" :alt="article.alt"/>
             <nuxt-content :document="article" />
           </article>
-          <div class="hidden lg:block w-full lg:w-4/12">
+          <div class="w-full lg:w-4/12">
             <a v-if="article.ads_banner && article.ads_url" :href="article.ads_url" target="_blank">
               <img :src="article.ads_banner" alt="Ads" class="w-full">
             </a>
