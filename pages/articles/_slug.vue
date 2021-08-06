@@ -21,7 +21,7 @@
                   <span class="bg-primary text-white px-2 py-1 rounded capitalize text-sm" v-for="(item_tag, index_tag) of article.tags" :key="index_tag">{{ item_tag }}</span>
                 </p>
               </div>
-              <img :src="article.img" :alt="article.alt" class="article-thumbnail" @click="lightboxTogglerClick()">
+              <img :src="article.img" :alt="article.alt" class="article-thumbnail fullwidth-mobile player" @click="lightboxTogglerClick()">
             </div>
             <Lightbox :toggler="lightbox_toggler" :sources="article.img" :alt="article.alt"/>
             <nuxt-content :document="article" />
