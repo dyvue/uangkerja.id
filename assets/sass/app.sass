@@ -114,6 +114,26 @@ header.scrolled
   &:active
     transform: scale(0.98)
 
+.catalog
+  color: $colorDarkBody
+  border: 1px solid $colorSecondaryHover
+  background-color: $colorSecondaryHover
+  transition: .2s all
+  @apply px-8 py-2 font-semibold rounded-3xl
+  &:hover
+    color: $colorBody
+  &-dark-body
+    color: $colorWhite
+    background-color: $colorDarkBody
+    border-color: $colorDarkBody
+    box-shadow: rgb(4 17 51 / 30%) 0px 2px 12px
+    &:hover
+      color: $colorWhite
+      border-color: $colorBody
+      background-color: $colorBody
+  &:active
+    transform: scale(0.98)
+
 .navbar
   font-family: 'Montserrat Alternates','Open Sans','sans-serif'
   color: $colorBody
@@ -290,7 +310,7 @@ header.scrolled
     @apply hidden
 @media (max-width: 711px)
   .container
-    @apply px-8
+    @apply px-5
 
   .navbar
     &-wrapper
@@ -300,3 +320,16 @@ header.scrolled
           left: -711px
   .action-wrapper
     @apply hidden
+
+  .article
+    &-thumbnail
+      margin-left: -1.50rem
+      margin-right: -1.50rem
+
+  .fullwidth-mobile
+    margin-left: -1.25rem
+    margin-right: -1.25rem
+  .player
+    border-radius: 0
+    width: 110.7%
+    max-width: 110.7%

@@ -9,16 +9,20 @@
           <span>></span>
           <span class="text-secondary">{{ article.title }}</span>
         </div>
-        <div class="mt-12 flex flex-col lg:flex-row gap-16">
+        <div class="mt-8 md:mt-12 flex flex-col lg:flex-row gap-16">
           <article id="article" class="article w-full lg:w-8/12 grid gap-6">
-            <h2 class="ft-h-article">{{ article.title }}</h2>
-            <p class="text-secondary">
-              {{ article.date }} by {{ article.author }}
-            </p>
-            <p class="flex gap-1">
-              <span class="bg-primary text-white px-2 py-1 rounded capitalize text-sm" v-for="(item_tag, index_tag) of article.tags" :key="index_tag">{{ item_tag }}</span>
-            </p>
-            <img :src="article.img" :alt="article.alt" class="article-thumbnail" @click="lightboxTogglerClick()">
+            <h2 class="ft-h-article font-bold leading-normal">{{ article.title }}</h2>
+            <div class="flex flex-col-reverse md:flex-col gap-6">
+              <div class="grid gap-6">
+                <p class="text-secondary">
+                  {{ article.date }} by {{ article.author }}
+                </p>
+                <p class="flex gap-1">
+                  <span class="bg-primary text-white px-2 py-1 rounded capitalize text-sm" v-for="(item_tag, index_tag) of article.tags" :key="index_tag">{{ item_tag }}</span>
+                </p>
+              </div>
+              <img :src="article.img" :alt="article.alt" class="article-thumbnail" @click="lightboxTogglerClick()">
+            </div>
             <Lightbox :toggler="lightbox_toggler" :sources="article.img" :alt="article.alt"/>
             <nuxt-content :document="article" />
           </article>
