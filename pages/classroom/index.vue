@@ -1,48 +1,47 @@
 <template>
   <div class="site-content">
-    <section class="relative pt-1">
-      <div class="container mx-auto border-t border-secondary-hover py-8">
-        <div class="flex flex-col lg:flex-row gap-16">
-          <div class="w-full lg:w-8/12">
-            <div class="grid gap-2">
-              <h1 class="ft-h-article font-bold leading-normal">Ruang Kelas</h1>
-              <p class="text-secondary">Pelajari ilmu <span class="text-primary-hover">ekonomi dan investasi</span> dari mentor yang berpengalaman</p>
-            </div>
-            <br class="hidden md:block">
-            <hr class="hidden md:block">
-            <br class="hidden md:block">
-            <div class="mt-12 md:mt-6 relative overflow-auto pb-3 md:pb-0 fullwidth-mobile">
-              <div class="inline-flex gap-2 md:gap-3 mx-5">
-                <button class="catalog catalog-dark-body">Featured</button>
-                <button class="catalog">Reksadana</button>
-                <button class="catalog">Saham</button>
-                <button class="catalog">Cryptocurrency</button>
-              </div>
-            </div>
+    <section class="relative pt-1 bg-white-hover">
+      <div class="waves-deepwhite-bottom"></div>
+      <div class="container mx-auto pt-8">
+        <div class="grid gap-6">
+          <div class="grid gap-2">
+            <h1 class="ft-h-article font-bold leading-normal">Ruang Kelas</h1>
+            <p class="text-secondary">Pelajari ilmu <span class="font-bold">ekonomi dan investasi</span> dari mentor yang berpengalaman</p>
           </div>
-          <div class="hidden w-full lg:w-4/12">
-            <a href="/classroom" target="_blank">
-              <div class="bg-primary-hover rounded-3xl">
-                <img src="/img/illustrations/classroom.svg" alt="Ads" class="w-full">
-              </div>
-            </a>
+          <div class="relative overflow-auto fullwidth-mobile">
+            <div class="inline-flex gap-2 md:gap-3 mx-5 md:mx-0">
+              <button class="catalog catalog-active">Featured</button>
+              <button class="catalog">Reksadana</button>
+              <button class="catalog">Saham</button>
+              <button class="catalog">Cryptocurrency</button>
+            </div>
           </div>
         </div>
-        <div class="mt-6 md:mt-12">
-          <div class="flex flex-col lg:flex-row gap-16">
-            <div class="w-full lg:w-8/12 ">
-              <div class="fullwidth-mobile player relative overflow-hidden rounded-3xl">
-                <vue-plyr
-                  ref="plyr"
-                  :options="plyr_options"
-                >
-                  <div class="plyr__video-embed">
-                    <iframe
-                      src="https://youtu.be/cCrVOkpLuTg"
-                    ></iframe>
+      </div>
+    </section>
+    <section class="relative mt-24">
+      <div class="container mx-auto">
+        <div class="grid gap-6">
+          <h3 class="ft-h font-bold text-lg md:text-xl">Kelas Investasi</h3>
+          <div class="relative overflow-auto fullwidth-mobile">
+            <div class="inline-flex pb-3 gap-5 md:gap-3 mx-5 md:mx-0">
+              <nuxt-link :to="{ name: 'classroom-slug', params: { slug: item.slug } }" v-for="(item, index) of classroom" :key="index">
+                <div class="shadow-lg rounded-2xl w-72 h-84">
+                  <template v-if="item.img">
+                    <img :src="item.img" :alt="item.title" class="w-full h-48 object-cover rounded-2xl">
+                  </template>
+                  <template v-else>
+                    <img src="https://muamalat-institute.com/wp-content/uploads/2021/05/placeholder.png" :alt="item.title" class="w-full h-48 object-cover rounded-2xl">
+                  </template>
+                  <div class="p-6 flex flex-col gap-4">
+                    <div class="inline-flex gap-2">
+                      <i v-for="index of 5" :key="index" class="fi fi-star text-primary"></i>
+                    </div>
+                    <h3 class="ft-h-article text-dark-body truncate">{{ item.title }}</h3>
+                    <p class="text-secondary text-sm"><i class="fi fi-hipchat mr-2"></i>{{ item.content.length }} Konten Aktif</p>
                   </div>
-                </vue-plyr>
-              </div>
+                </div>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -53,62 +52,30 @@
 
 <script>
 export default {
-  layout: 'app',
+  layout: 'app-blank',
   head: {
     title: 'Ruang Kelas - Uang Kerja',
   },
-  data () {
-    return {
-      plyr_options: {
-        autoplay: true,
-        controls: [
-          'play-large',
-          // 'restart',
-          // 'rewind',
-          'play',
-          // 'fast-forward',
-          'progress',
-          'current-time',
-          // 'duration',
-          'mute',
-          'volume',
-          'captions',
-          'settings',
-          'pip',
-          'airplay',
-          // 'download',
-          'fullscreen',
-        ],
-        captions: {
-          active: true,
-          language: "auto",
-          update: false
-        },
-        youtube: {
-          noCookie: true,
-          rel: 0,
-          showinfo: 0,
-          iv_load_policy: 3,
-          modestbranding: 1
-        }
-      }
+  async asyncData({ $content, query, error }) {
+    try {
+      const classroom = await $content("classroom")
+        .sortBy('title', 'asc')
+        .fetch();
+      return { classroom }
+    }
+    catch (err) {
+      error(err)
     }
   },
-  computed: {
-    player () {
-      return this.$refs.plyr.player
-    }
-  },
-  methods: {
-    videoPlay: function () {
-      this.player.play()
-    }
-  }
 }
 </script>
 
 <style>
-  .player {
-    --plyr-color-main: #43c59e;
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 </style>

@@ -10,6 +10,7 @@ module.exports = {
       'secondary-hover': '#cfd5e4',
       white: '#ffffff',
       'white-hover': '#fafbfd',
+      black: '#000000',
     },
     extend: {}
   },
