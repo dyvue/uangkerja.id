@@ -52,7 +52,7 @@
 
 <script>
 export default {
-  layout: 'app-blank',
+  layout: 'app-classroom',
   head: {
     title: 'Ruang Kelas - Uang Kerja',
   },

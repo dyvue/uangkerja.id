@@ -1,6 +1,30 @@
 ---
 title: Felicia Putri Tjisaka
-img: https://yt3.ggpht.com/ytc/AKedOLTwno32vvnJezu2NKRJlNfpKAH-PMxPdS0724Busg=s900-c-k-c0x00ffffff-no-rj
+description: Content Creator
+img: https://assets-a1.kompasiana.com/items/album/2021/01/13/download-5fff114e8ede4875d0751d62.jpg
 content:
-  - -IRbihK3sxg
+  - id: lZ-5GP-vHmI
+    title: Semua Punya Privilege
+    minutes: 8
+  - id: -IRbihK3sxg
+    title: Stok Split BBCA
+    minutes: 8
+  - id: KnV1iRdimJk
+    title: Cara Aku Pilih Saham (Edisi 2021)
+    minutes: 12
+  - id: HKJWbJqis3U
+    title: Trading Vs Investing
+    minutes: 7
+  - id: eyWWakL6QtM
+    title: 10 Juta/bulan Di Tahun Pertama Kerja?
+    minutes: 10
+  - id: QLYLGklC0DQ
+    title: Menghitung Mimpi: Beli Mobil Pertama
+    minutes: 9
+  - id: ahuJSr2Hfz0
+    title: Cerita 1 Miliar Pertama
+    minutes: 9
+  - id: Dbet5-aqQvk
+    title: Cara Dapat 2 Miliar Dengan 4 Sumber Income
+    minutes: 12
 ---

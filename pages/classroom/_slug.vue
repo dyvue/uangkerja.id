@@ -1,39 +1,57 @@
 <template>
-  <div class="site-content">
-    <section class="relative pt-1">
-      <div class="border-t border-secondary-hover">
-        <article id="article" class="article grid gap-6">
-          <div class="relative overflow-hidden bg-black">
-            <div class="px-0 lg:px-48">
-              <vue-plyr
-                ref="plyr"
-                :options="plyr_options"
-                :key="plyr_key"
-              >
-                <div class="plyr__video-embed">
-                  <iframe
-                    :src="v.url"
-                    class="w-full h-full"
-                  ></iframe>
+  <div>
+    <section class="relative">
+      <article id="classroom" class="grid gap-6">
+        <div class="relative overflow-hidden bg-black">
+          <div class="px-0 lg:px-32">
+            <vue-plyr
+              ref="plyr"
+              :options="plyr_options"
+              :key="plyr_key"
+            >
+              <div class="plyr__video-embed">
+                <iframe
+                  :src="v.url"
+                  class="w-full h-full"
+                ></iframe>
+              </div>
+            </vue-plyr>
+          </div>
+        </div>
+        <div class="container mx-auto">
+          <div class="grid gap-6">
+            <div class="flex items-center gap-4">
+              <img :src="classroom.img" :alt="classroom.title" class="w-12 h-12 object-cover rounded-full">
+              <div class="grid">
+                <h3 class="ft-h-article font-bold leading-normal">{{ classroom.title }}</h3>
+                <p>{{ classroom.description }}</p>
+              </div>
+            </div>
+            <div class="grid gap-2 relative overflow-y-scroll h-96">
+              <div v-for="(item, index) of classroom.content" :key="index">
+                <div class="w-full bg-secondary-hover p-4 px-6 text-left text-dark-body rounded" @click="vChange(item.id)">
+                  <div class="relative overflow-hidden grid grid-cols-5 gap-6">
+                    <div class="col-span-4 relative overflow-hidden flex items-center">
+                      <i class="fi fi-google-play mr-2"></i>
+                      <span class="font-semibold truncate">{{ item.title }}</span>
+                    </div>
+                    <div class="col-span-1 relative overflow-hidden flex items-center">
+                      <span class="text-xs truncate">{{ item.minutes }} mins</span>
+                    </div>
+                  </div>
                 </div>
-              </vue-plyr>
+              </div>
             </div>
           </div>
-          <div class="container mx-auto">
-            <div class="grid gap-2">
-              <h3 class="ft-h-article font-bold leading-normal">{{ v.title }}</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis animi expedita fugit pariatur sed amet deserunt distinctio quae illum consectetur?</p>
-            </div>
-          </div>
-        </article>
-      </div>
+        </div>
+      </article>
     </section>
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'app-blank',
+  layout: 'app-classroom-class',
   head: {
     title: 'Ruang Kelas - Uang Kerja',
   },
@@ -49,23 +67,13 @@ export default {
   data () {
     return {
       plyr_options: {
-        // autoplay: true,
+        autoplay: true,
         controls: [
           'play-large',
-          // 'restart',
-          // 'rewind',
           'play',
-          // 'fast-forward',
+          'fast-forward',
           'progress',
-          'current-time',
-          // 'duration',
-          'mute',
-          'volume',
-          'captions',
-          'settings',
-          'pip',
-          'airplay',
-          // 'download',
+          'duration',
           'fullscreen',
         ],
         captions: {
@@ -82,9 +90,8 @@ export default {
         }
       },
       v: {
-        id: '-IRbihK3sxg',
-        url: '',
-        title: 'STOCK SPLIT BBCA | #GhibahinSaham'
+        id: 'MvwN7lWib-I',
+        url: ''
       },
       plyr_key: 0,
     }
@@ -94,13 +101,12 @@ export default {
       return this.$refs.plyr.player
     }
   },
-  created () {
-    this.vChange(this.v.id)
+  mounted () {
+    this.vChange(this.classroom.content[0].id)
   },
   methods: {
     vChange: function (vid) {
       this.v.url = 'https://www.youtube.com/embed/'+vid
-      const yt = "https://www.googleapis.com/youtube/v3/videos?part=id%2Csnippet&id=uMjzuBwoIRM&key=AIzaSyCxmiLyQfPMlKwnFppSko6fpECZGOmchjc"
       this.plyrRender()
     },
     plyrRender() {
@@ -112,6 +118,13 @@ export default {
 
 <style>
   body {
+    --plyr-color-main: transparent;
+    --plyr-control-radius: 0;
+    --plyr-badge-border-radius: 0;
+    --plyr-menu-radius: 0;
+    --plyr-tooltip-radius: 0;
+  }
+  .plyr__progress {
     --plyr-color-main: #43c59e;
   }
   .plyr__control {
@@ -120,5 +133,17 @@ export default {
   }
   .plyr__control--overlaid {
     padding: 20px;
+  }
+  .plyr__control svg {
+    width: 18px;
+    height: 18px;
+    border: none;
+  }
+  .plyr__control--overlaid svg {
+    width: 40px;
+    height: 40px;
+  }
+  .plyr--full-ui input[type=range], .plyr__progress__buffer {
+    border-radius: 0;
   }
 </style>
