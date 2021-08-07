@@ -19,7 +19,7 @@ content:
     title: 10 Juta/bulan Di Tahun Pertama Kerja?
     minutes: 10
   - id: QLYLGklC0DQ
-    title: Menghitung Mimpi: Beli Mobil Pertama
+    title: Menghitung Mimpi (Beli Mobil Pertama)
     minutes: 9
   - id: ahuJSr2Hfz0
     title: Cerita 1 Miliar Pertama
