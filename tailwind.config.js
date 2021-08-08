@@ -11,6 +11,7 @@ module.exports = {
       white: '#ffffff',
       'white-hover': '#fafbfd',
       black: '#000000',
+      'dark-mode': '#000000',
     },
     extend: {}
   },

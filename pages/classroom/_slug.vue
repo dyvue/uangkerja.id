@@ -23,13 +23,13 @@
             <div class="flex items-center gap-4">
               <img :src="classroom.img" :alt="classroom.title" class="w-12 h-12 object-cover rounded-full">
               <div class="grid">
-                <h3 class="ft-h-article font-bold leading-normal">{{ classroom.title }}</h3>
-                <p>{{ classroom.description }}</p>
+                <h3 class="ft-h-article font-bold leading-normal text-white">{{ classroom.title }}</h3>
+                <p class="text-white">{{ classroom.description }}</p>
               </div>
             </div>
-            <div class="grid gap-2 relative overflow-y-scroll h-96">
+            <div class="grid gap-2 relative overflow-y-scroll max-h-96">
               <div v-for="(item, index) of classroom.content" :key="index">
-                <div class="w-full bg-secondary-hover p-4 px-6 text-left text-dark-body rounded" @click="vChange(item.id)">
+                <div class="w-full bg-secondary-hover p-4 px-6 text-left text-dark-body rounded cursor-pointer" @click="vChange(item.id)">
                   <div class="relative overflow-hidden grid grid-cols-5 gap-6">
                     <div class="col-span-4 relative overflow-hidden flex items-center">
                       <i class="fi fi-google-play mr-2"></i>
@@ -57,7 +57,7 @@ export default {
   },
   async asyncData({ $content, params, error }) {
     try {
-      const classroom = await $content('classroom', params.slug).fetch()
+      const classroom = await $content('classroom/saham', params.slug).fetch()
       return { classroom }
     }
     catch (err) {
@@ -111,7 +111,13 @@ export default {
     },
     plyrRender() {
       this.plyr_key += 1;  
-    }
+    },
+    changeColorMode(colorMode) {
+      if (colorMode) {
+				this.colorMode_ = colorMode
+        this.$colorMode.preference = colorMode;
+      }
+		},
   },
 }
 </script>

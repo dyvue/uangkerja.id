@@ -1,7 +1,8 @@
 ---
+id: 00003
 title: Felicia Putri Tjisaka
-description: Content Creator
-img: https://assets-a1.kompasiana.com/items/album/2021/01/13/download-5fff114e8ede4875d0751d62.jpg
+description: Investment Storyteller
+img: https://i.ibb.co/n8gMPN7/unnamed.jpg
 content:
   - id: lZ-5GP-vHmI
     title: Semua Punya Privilege

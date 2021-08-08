@@ -41,11 +41,11 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    '@nuxt/content',
     '@nuxtjs/google-fonts',
     '@nuxtjs/google-analytics',
-    '@nuxt/content',
     '@nuxtjs/sitemap',
+    '@nuxtjs/tailwindcss',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

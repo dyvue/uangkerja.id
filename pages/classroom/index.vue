@@ -58,8 +58,8 @@ export default {
   },
   async asyncData({ $content, query, error }) {
     try {
-      const classroom = await $content("classroom")
-        .sortBy('title', 'asc')
+      const classroom = await $content("classroom/saham")
+        .sortBy('id', 'asc')
         .fetch();
       return { classroom }
     }
