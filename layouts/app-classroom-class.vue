@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-dark-mode">
+  <div class="bg-dark-mode fixed lg:relative w-full h-full">
     <Nuxt/>
     <br>
     <div class="absolute lg:relative bottom-0 left-0 w-full flex justify-center items-center text-center gap-4">
@@ -23,9 +23,4 @@ export default {
 </script>
 
 <style>
-  body {
-    background-color: #000000;
-    width: 100%;
-    height: 100%;
-  }
 </style>
