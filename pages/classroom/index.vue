@@ -72,10 +72,10 @@ export default {
 
 <style>
   @media screen and (max-width: 768px) {
-    body::-webkit-scrollbar {
+    *::-webkit-scrollbar {
       display: none;
     }
-    body {
+    * {
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
