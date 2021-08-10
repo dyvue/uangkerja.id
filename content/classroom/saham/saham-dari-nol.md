@@ -1,5 +1,5 @@
 ---
-id: 00004
+id: 00003
 title: Saham Dari Nol
 description: Youtube Creator
 img: https://i.ibb.co/bPZpsW7/saham-dari-nol.png
@@ -31,7 +31,7 @@ content:
   - id: UUpMMZL1pkE
     title: Cara Menghitung Harga Wajar Saham (PBV)
     minutes: 11
-  - id: NiaXDTyn9Q
+  - id: NiaXDTyn9Q0
     title: Pentingnya Gross Margin dalam Laporan Keuangan!
     minutes: 10
   - id: uMjzuBwoIRM

@@ -4,7 +4,7 @@ title: Rivan Kurniawan
 description: Value Investor
 img: https://i.ibb.co/S5XrLV2/Rivan-Kurniawan.jpg
 content:
-  - id: cEIBbXlbfl
+  - id: cEIBbXlbflQ
     title: Apakah Value Investing Masih Relevan Di Saat Ini?
     minutes: 32
   - id: 8jp8NEP3Yws
