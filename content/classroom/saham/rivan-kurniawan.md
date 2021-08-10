@@ -1,5 +1,5 @@
 ---
-id: 00004
+id: 00005
 title: Rivan Kurniawan
 description: Value Investor
 img: https://i.ibb.co/S5XrLV2/Rivan-Kurniawan.jpg
