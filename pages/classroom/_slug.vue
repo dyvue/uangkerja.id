@@ -108,6 +108,7 @@ export default {
     vChange: function (vid) {
       this.v.url = 'https://www.youtube.com/embed/'+vid
       this.plyrRender()
+      console.clear()
     },
     plyrRender() {
       this.plyr_key += 1;  

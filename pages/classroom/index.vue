@@ -71,11 +71,25 @@ export default {
 </script>
 
 <style>
-  *::-webkit-scrollbar {
-    display: none;
+  @media screen and (max-width: 768px) {
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
   }
-  * {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  body::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #cfd5e4;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #75809f;
+    border-radius: 50px;
   }
 </style>
