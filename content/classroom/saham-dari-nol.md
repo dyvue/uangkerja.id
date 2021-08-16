@@ -1,5 +1,5 @@
 ---
-id: 00004
+id: 00003
 title: Saham Dari Nol
 description: Youtube Creator
 img: https://i.ibb.co/bPZpsW7/saham-dari-nol.png

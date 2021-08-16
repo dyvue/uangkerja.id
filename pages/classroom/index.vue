@@ -46,9 +46,9 @@
           </div>
         </div>
         <div class="grid gap-6">
-          <h3 class="ft-h font-bold text-lg md:text-xl text-white">baru baru ini</h3>
+          <h3 class="ft-h font-bold text-lg md:text-xl text-white">kamu harus tonton</h3>
           <div class="grid gap-6 fullwidth-mobile">
-            <nuxt-link :to="{ name: 'classroom-vid-slug', params: { slug: item.slug } }" v-for="(item, index) of recent_videos" :key="index">
+            <nuxt-link :to="{ name: 'classroom-vid-slug', params: { slug: item.slug } }" v-for="(item, index) of best_videos" :key="index">
               <div class="bg-dark-mode w-full">
                 <template v-if="item.img">
                   <img :src="item.img" :alt="item.title" class="w-full h-52 object-cover">
@@ -60,7 +60,7 @@
                   <div class="flex gap-3 md:gap-6">
                     <img :src="item.creator.img" :alt="item.creator.title" class="w-10 md:w-12 h-10 md:w-12 object-cover rounded-full">
                     <div>
-                      <h3 class="ft-h-article text-white text-base md:text-lg">{{ item.title }}</h3>
+                      <h3 class="ft-h-article text-white text-sm md:text-base lg:text-lg">{{ item.title }}</h3>
                       <span class="text-white text-xs md:text-sm">
                         {{ item.creator.title }}
                         |
@@ -87,12 +87,12 @@ export default {
   async asyncData({ $content, query, error }) {
     try {
       const classroom = await $content("classroom")
-        .sortBy('id', 'asc')
+        .sortBy('id', 'desc')
         .fetch();
-      const recent_videos = await $content("classroom/recent-videos")
-        .sortBy('id', 'asc')
+      const best_videos = await $content("classroom/best-videos")
+        .sortBy('id', 'desc')
         .fetch();
-      return { classroom, recent_videos }
+      return { classroom, best_videos }
     }
     catch (err) {
       error(err)

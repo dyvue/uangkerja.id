@@ -1,5 +1,5 @@
 ---
-id: 00006
+id: 00001
 title: Gita Wirjawan
 description: Indonesian Entrepreneur
 img: https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1613106939/xun50itqjpyh1ktksb2r.jpg

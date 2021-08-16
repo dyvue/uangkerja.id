@@ -42,7 +42,7 @@ export default {
   },
   async asyncData({ $content, params, error }) {
     try {
-      const videos = await $content('classroom/recent-videos', params.slug).fetch()
+      const videos = await $content('classroom/best-videos', params.slug).fetch()
       return { videos }
     }
     catch (err) {
