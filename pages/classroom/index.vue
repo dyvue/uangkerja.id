@@ -1,26 +1,27 @@
 <template>
   <div>
-    <section class="relative pt-1 bg-white-hover">
-      <div class="waves-deepwhite-bottom"></div>
-      <div class="container mx-auto pt-2">
+    <section class="relative py-8 bg-primary-hover">
+      <div class="illustration-money"></div>
+      <div class="container mx-auto">
         <div class="grid gap-6">
           <div class="grid gap-2 text-center">
-            <h1 class="ft-h font-bold leading-normal text-2xl">Ruang Kelas</h1>
-            <p class="text-secondary text-xs md:text-base">Pelajari ilmu <span class="font-bold">ekonomi dan investasi</span> dari mentor yang berpengalaman</p>
-          </div>
-          <div class="relative overflow-auto fullwidth-mobile">
-            <div class="inline-flex gap-2 md:gap-3 mx-5 md:mx-0">
-              <button class="catalog catalog-active">Featured</button>
-              <button class="catalog">Reksadana</button>
-              <button class="catalog">Saham</button>
-              <button class="catalog">Cryptocurrency</button>
-            </div>
+            <h1 class="ft-h font-bold leading-normal text-2xl"># ruang kelas</h1>
+            <p class="text-xs md:text-base">Pelajari ilmu <span class="font-bold">ekonomi dan investasi</span> dari mentor yang berpengalaman</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="relative mt-24">
+    <section class="relative mt-8">
       <div class="container mx-auto">
+        <div class="relative overflow-auto fullwidth-mobile">
+          <div class="inline-flex gap-2 md:gap-3 mx-5 md:mx-0">
+            <button class="catalog catalog-active">Featured</button>
+            <button class="catalog">Reksadana</button>
+            <button class="catalog">Saham</button>
+            <button class="catalog">Cryptocurrency</button>
+          </div>
+        </div>
+        <br>
         <div class="grid gap-6">
           <h3 class="ft-h font-bold text-lg md:text-xl text-white">Kelas Gratis</h3>
           <div class="relative overflow-x-auto fullwidth-mobile">
