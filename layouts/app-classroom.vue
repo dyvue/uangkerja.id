@@ -1,10 +1,6 @@
 <template>
-  <div>
-    <Header/>
+  <div class="bg-dark-mode fixed lg:relative w-full h-full overflow-y-auto">
     <Nuxt/>
-    <br>
-    <br>
-    <br>
   </div>
 </template>
 
@@ -20,5 +16,4 @@ export default {
 </script>
 
 <style>
-
 </style>

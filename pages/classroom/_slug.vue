@@ -1,8 +1,8 @@
 <template>
   <div>
     <section class="relative">
-      <article id="classroom" class="grid gap-6">
-        <div class="relative overflow-hidden bg-black">
+      <article id="classroom" class="grid gap-6 pb-0 lg:pb-12">
+        <div class="fixed z-10 lg:relative w-full overflow-hidden bg-black">
           <div class="px-0 lg:px-32">
             <vue-plyr
               ref="plyr"
@@ -18,24 +18,24 @@
             </vue-plyr>
           </div>
         </div>
-        <div class="container mx-auto">
+        <div class="mt-64 lg:mt-0 relative overflow-y-auto container mx-auto">
           <div class="grid gap-6">
             <div class="flex items-center gap-4">
-              <img :src="classroom.img" :alt="classroom.title" class="w-12 h-12 object-cover rounded-full">
+              <img :src="classroom.img" :alt="classroom.title" class="w-10 md:w-12 h-10 md:h-12 object-cover rounded-full">
               <div class="grid">
-                <h3 class="ft-h-article font-bold leading-normal text-white">{{ classroom.title }}</h3>
-                <p class="text-white">{{ classroom.description }}</p>
+                <h3 class="ft-h-article font-bold leading-normal text-white text-base md:text-lg">{{ classroom.title }}</h3>
+                <p class="text-white text-xs md:text-sm">{{ classroom.description }}</p>
               </div>
             </div>
-            <div class="grid gap-2 relative overflow-y-scroll max-h-96">
+            <div class="grid gap-2">
               <div v-for="(item, index) of classroom.content" :key="index">
-                <div class="w-full bg-secondary-hover p-4 px-6 text-left text-dark-body rounded cursor-pointer" @click="vChange(item.id)">
-                  <div class="relative overflow-hidden grid grid-cols-5 gap-6">
+                <div class="w-full bg-secondary-hover p-4 text-left text-dark-body rounded cursor-pointer" @click="vChange(item.id)">
+                  <div class="relative overflow-hidden grid grid-cols-5 gap-3">
                     <div class="col-span-4 relative overflow-hidden flex items-center">
-                      <i class="fi fi-google-play mr-2"></i>
-                      <span class="font-semibold truncate">{{ item.title }}</span>
+                      <i class="fi fi-google-play mr-3"></i>
+                      <span class="font-semibold truncate text-xs md:text-sm">{{ item.title }}</span>
                     </div>
-                    <div class="col-span-1 relative overflow-hidden flex items-center">
+                    <div class="col-span-1 relative overflow-hidden flex justify-end items-center">
                       <span class="text-xs truncate">{{ item.minutes }} mins</span>
                     </div>
                   </div>
@@ -57,7 +57,7 @@ export default {
   },
   async asyncData({ $content, params, error }) {
     try {
-      const classroom = await $content('classroom/saham', params.slug).fetch()
+      const classroom = await $content('classroom', params.slug).fetch()
       return { classroom }
     }
     catch (err) {
@@ -73,7 +73,7 @@ export default {
           'play',
           'fast-forward',
           'progress',
-          'duration',
+          'current-time',
           'fullscreen',
         ],
         captions: {
@@ -87,10 +87,16 @@ export default {
           showinfo: 0,
           iv_load_policy: 3,
           modestbranding: 1
+        },
+        fullscreen: {
+          enabled: true,
+          fallback: true,
+          iosNative: true,
+          container: null
         }
       },
       v: {
-        id: 'MvwN7lWib-I',
+        id: '',
         url: ''
       },
       plyr_key: 0,
@@ -111,7 +117,7 @@ export default {
       console.clear()
     },
     plyrRender() {
-      this.plyr_key += 1;  
+      this.plyr_key += 1;
     },
     changeColorMode(colorMode) {
       if (colorMode) {
@@ -142,13 +148,14 @@ export default {
     padding: 20px;
   }
   .plyr__control svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     border: none;
+    fill: #43c59e;
   }
   .plyr__control--overlaid svg {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
   .plyr--full-ui input[type=range], .plyr__progress__buffer {
     border-radius: 0;

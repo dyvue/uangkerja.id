@@ -1,10 +1,9 @@
 <template>
-  <div class="bg-dark-mode fixed lg:relative w-full h-full">
+  <div class="bg-dark-mode fixed lg:relative w-full h-full overflow-y-auto">
     <Nuxt/>
-    <br>
-    <div class="absolute lg:relative bottom-0 left-0 w-full flex justify-center items-center text-center gap-4">
-      <p class="text-white">Ruang Kelas by</p>
-      <img src="/img/logo-hr.png" alt="uangkerja" class="w-32">
+    <div class="relative flex justify-center items-center text-center gap-4">
+      <p class="text-white text-xs md:text-sm">Ruang Kelas by</p>
+      <img src="/img/logo-hr.png" alt="uangkerja" class="w-24">
       <br><br>
       <br><br>
     </div>
