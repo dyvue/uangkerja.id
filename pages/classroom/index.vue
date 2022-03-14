@@ -58,7 +58,7 @@
                 </template>
                 <div class="p-3 md:py-4 flex flex-col">
                   <div class="flex gap-3 md:gap-6">
-                    <img :src="item.creator.img" :alt="item.creator.title" class="w-10 md:w-12 h-10 md:w-12 object-cover rounded-full">
+                    <img :src="item.creator.img" :alt="item.creator.title" class="w-10 md:w-12 h-10 md:h-12 object-cover rounded-full">
                     <div>
                       <h3 class="ft-h-article text-white text-sm md:text-base lg:text-lg">{{ item.title }}</h3>
                       <span class="text-white text-xs md:text-sm">

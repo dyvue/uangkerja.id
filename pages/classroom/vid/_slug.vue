@@ -28,7 +28,7 @@
               </div>
             </div>
           </div>
-          <div class="my-8 pt-8 border-t border-white grid gap-6">
+          <div class="my-8 grid gap-6">
             <h3 class="ft-h font-bold text-lg md:text-xl text-white">rekomendasi</h3>
             <div class="grid gap-6 fullwidth-mobile">
               <nuxt-link :to="{ name: 'classroom-vid-slug', params: { slug: item.slug } }" v-for="(item, index) of recommendation_videos" :key="index">
@@ -41,7 +41,7 @@
                   </template>
                   <div class="p-3 md:py-4 flex flex-col">
                     <div class="flex gap-3 md:gap-6">
-                      <img :src="item.creator.img" :alt="item.creator.title" class="w-10 md:w-12 h-10 md:w-12 object-cover rounded-full">
+                      <img :src="item.creator.img" :alt="item.creator.title" class="w-10 md:w-12 h-10 md:h-12 object-cover rounded-full">
                       <div>
                         <h3 class="ft-h-article text-white text-sm md:text-base lg:text-lg">{{ item.title }}</h3>
                         <span class="text-white text-xs md:text-sm">

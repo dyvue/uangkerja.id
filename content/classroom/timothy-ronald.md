@@ -1,5 +1,5 @@
 ---
-id: 00006
+id: 00005
 title: Timothy Ronald
 description: CEO Ternakuang
 img: https://i.ibb.co/ccvvQb3/ezgif-com-gif-maker-1.jpg
