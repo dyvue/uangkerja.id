@@ -51,10 +51,10 @@
             <nuxt-link :to="{ name: 'classroom-vid-slug', params: { slug: item.slug } }" v-for="(item, index) of best_videos" :key="index">
               <div class="bg-dark-mode w-full">
                 <template v-if="item.img">
-                  <img :src="item.img" :alt="item.title" class="w-full h-52 object-cover">
+                  <img :src="item.img" :alt="item.title" class="w-full h-52 md:h-96 object-cover">
                 </template>
                 <template v-else>
-                  <img src="https://muamalat-institute.com/wp-content/uploads/2021/05/placeholder.png" :alt="item.title" class="w-full h-64 object-cover">
+                  <img src="https://muamalat-institute.com/wp-content/uploads/2021/05/placeholder.png" :alt="item.title" class="w-full h-52 md:h-96 object-cover">
                 </template>
                 <div class="p-3 md:py-4 flex flex-col">
                   <div class="flex gap-3 md:gap-6">
@@ -63,7 +63,7 @@
                       <h3 class="ft-h-article text-white text-sm md:text-base lg:text-lg">{{ item.title }}</h3>
                       <span class="text-white text-xs md:text-sm">
                         {{ item.creator.title }}
-                        |
+                        -
                         {{ item.creator.description }}
                       </span>
                     </div>

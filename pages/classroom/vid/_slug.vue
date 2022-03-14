@@ -28,6 +28,34 @@
               </div>
             </div>
           </div>
+          <div class="my-8 pt-8 border-t border-white grid gap-6">
+            <h3 class="ft-h font-bold text-lg md:text-xl text-white">rekomendasi</h3>
+            <div class="grid gap-6 fullwidth-mobile">
+              <nuxt-link :to="{ name: 'classroom-vid-slug', params: { slug: item.slug } }" v-for="(item, index) of recommendation_videos" :key="index">
+                <div class="bg-dark-mode w-full">
+                  <template v-if="item.img">
+                    <img :src="item.img" :alt="item.title" class="w-full h-52 md:h-96 object-cover">
+                  </template>
+                  <template v-else>
+                    <img src="https://muamalat-institute.com/wp-content/uploads/2021/05/placeholder.png" :alt="item.title" class="w-full h-52 md:h-96 object-cover">
+                  </template>
+                  <div class="p-3 md:py-4 flex flex-col">
+                    <div class="flex gap-3 md:gap-6">
+                      <img :src="item.creator.img" :alt="item.creator.title" class="w-10 md:w-12 h-10 md:w-12 object-cover rounded-full">
+                      <div>
+                        <h3 class="ft-h-article text-white text-sm md:text-base lg:text-lg">{{ item.title }}</h3>
+                        <span class="text-white text-xs md:text-sm">
+                          {{ item.creator.title }}
+                          -
+                          {{ item.creator.description }}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nuxt-link>
+            </div>
+          </div>
         </div>
       </article>
     </section>
@@ -43,7 +71,11 @@ export default {
   async asyncData({ $content, params, error }) {
     try {
       const videos = await $content('classroom/best-videos', params.slug).fetch()
-      return { videos }
+      const recommendation_videos = await $content("classroom/best-videos")
+        .sortBy('id', 'desc')
+        .where(({ id: { $ne: videos.id } }))
+        .fetch();
+      return { videos, recommendation_videos }
     }
     catch (err) {
       error({ statusCode: 404, message: "Post not found" })

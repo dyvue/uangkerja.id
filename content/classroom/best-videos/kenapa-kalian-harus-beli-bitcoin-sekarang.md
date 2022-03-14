@@ -1,9 +1,9 @@
 ---
 id: 00006
-vid: med_Mklm_e0
-title: 3 Habit Yang Membuat Gua Jadi Milyarder Di Umur 20
+vid: GCzsnlac3FQ
+title: Kenapa Kalian Harus Beli Bitcoin Sekarang
 minutes: 8
-img: http://i3.ytimg.com/vi/med_Mklm_e0/maxresdefault.jpg
+img: http://i3.ytimg.com/vi/GCzsnlac3FQ/maxresdefault.jpg
 creator:
   title: Timothy Ronald
   description: CEO Ternakuang
